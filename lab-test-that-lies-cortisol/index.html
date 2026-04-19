@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Your &quot;Normal&quot; Cortisol Test Missed the Real Problem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #6DBAE8;
+      --color-secondary: #D4724A;
+      --color-accent: #D4724A;
+      --color-cta: #6DBAE8;
+      --color-cta-text: #ffffff;
+      --color-cta-hover: #6DBAE8;
+      --color-urgency-bg: #fff3cd;
+      --color-background: #ffffff;
+      --color-text: #1a1a2e;
+      --color-text-secondary: #6c757d;
+      --color-border: #dee2e6;
+      --color-section-alt: #f8f9fa;
+      --font-heading: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --heading-weight: 700;
+      --body-weight: 400;
+      --body-size: 16px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body);
+      font-size: var(--body-size);
+      font-weight: var(--body-weight);
+      line-height: 1.7;
+      color: var(--color-text);
+      background: var(--color-background);
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* ── Headline ── */
+    .headline-block { text-align: center; padding: 2.5em 20px 1.5em; }
+    .headline-block h1 {
+      font-family: var(--font-heading);
+      font-weight: var(--heading-weight);
+      color: var(--color-text);
+      line-height: 1.25;
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+    }
+    .headline-block .subheadline {
+      color: var(--color-text-secondary);
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 1em auto 0;
+      line-height: 1.5;
+    }
+    .headline-block .authority-line {
+      color: var(--color-text-secondary);
+      font-size: 0.9em;
+      margin-top: 0.75em;
+    }
+
+    /* ── Hero image ── */
+    .hero-image-wrap {
+      max-width: 720px;
+      margin: 0 auto 2em;
+      padding: 0 20px;
+    }
+    .hero-image-wrap .hero-image-inner {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    /* ── Body section (advertorial prose) ── */
+    .body-section {
+      max-width: 720px;
+      margin: 0 auto 2em;
+      padding: 0 20px;
+    }
+    .body-section h2 {
+      font-family: var(--font-heading);
+      font-weight: var(--heading-weight);
+      color: var(--color-text);
+      font-size: clamp(1.25rem, 3vw, 1.625rem);
+      line-height: 1.3;
+      margin: 1em 0 0.6em;
+    }
+    .body-section p {
+      color: var(--color-text);
+      line-height: 1.75;
+      text-align: left;
+      margin-bottom: 1em;
+    }
+    .body-section p:last-child { margin-bottom: 0; }
+    .body-section .section-image {
+      margin: 1.5em 0;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .body-section.section-alt {
+      background: var(--color-section-alt);
+      padding: 1.5em 20px;
+      border-radius: 12px;
+    }
+
+    /* ── CTA card (used by cta-card partial) ── */
+    .cta-card-wrap {
+      max-width: 720px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+    .cta-card-inner {
+      border-radius: 12px;
+      padding: 24px;
+      background: var(--color-section-alt);
+    }
+    @media (min-width: 768px) {
+      .cta-card-inner { padding: 28px; }
+      .cta-card-flex { display: flex; gap: 24px; align-items: center; }
+      .cta-card-image { width: 40%; flex-shrink: 0; }
+      .cta-card-content { width: 60%; }
+    }
+    .cta-card-image { margin-bottom: 16px; }
+    @media (min-width: 768px) {
+      .cta-card-image { margin-bottom: 0; }
+    }
+    .cta-card-image .product-img-container {
+      aspect-ratio: 1 / 1;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-border);
+    }
+    .cta-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .cta-card-content { text-align: center; }
+    @media (min-width: 768px) {
+      .cta-card-content { text-align: left; }
+    }
+    .cta-card-content h2 {
+      font-family: var(--font-heading);
+      font-weight: var(--heading-weight);
+      color: var(--color-text);
+      font-size: 1.3em;
+      margin-bottom: 16px;
+    }
+    .cta-benefits { list-style: none; margin-bottom: 20px; }
+    .cta-benefits li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.95em;
+      color: var(--color-text);
+      margin-bottom: 8px;
+    }
+    @media (max-width: 767px) {
+      .cta-benefits li { justify-content: center; }
+    }
+    .cta-benefits li:last-child { margin-bottom: 0; }
+    .cta-check {
+      color: var(--color-accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ── CTA button ── */
+    a.cta-button {
+      display: inline-block;
+      background: var(--color-cta);
+      color: var(--color-cta-text);
+      padding: 16px 48px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: 700;
+      font-family: var(--font-body);
+      text-align: center;
+      transition: background 0.2s, transform 0.1s;
+    }
+    a.cta-button:hover { background: var(--color-cta-hover); transform: translateY(-1px); }
+    a.cta-button:active { transform: translateY(0); }
+    a.cta-button.full-width { display: block; width: 100%; font-size: 1.15em; }
+    .cta-button-wrap { text-align: center; }
+    @media (min-width: 768px) {
+      .cta-card-flex .cta-button-wrap { text-align: left; }
+    }
+    .cta-trust-line {
+      margin-top: 12px;
+      font-size: 0.85em;
+      color: var(--color-text-secondary);
+    }
+    .cta-payment-line {
+      margin-top: 4px;
+      font-size: 0.8em;
+      color: var(--color-text-secondary);
+    }
+
+    /* Mid-page CTA — always centered (overrides desktop left-align) */
+    .mid-page-cta .cta-card-content { width: 100%; text-align: center; }
+    .mid-page-cta .cta-card-flex { justify-content: center; }
+    .mid-page-cta .cta-button-wrap { text-align: center; }
+
+    /* ── Social proof (used by review-card partial) ── */
+    .social-proof-section {
+      max-width: 720px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+    .social-proof-section h2 {
+      font-family: var(--font-heading);
+      font-weight: var(--heading-weight);
+      color: var(--color-text);
+      text-align: center;
+      font-size: 1.3em;
+      margin-bottom: 1.5em;
+    }
+    .review-card {
+      background: var(--color-background);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .review-stars {
+      color: var(--color-accent);
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+    .review-card blockquote {
+      color: var(--color-text);
+      line-height: 1.6;
+      margin: 0 0 12px;
+      font-style: normal;
+    }
+    .review-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .review-name {
+      color: var(--color-text-secondary);
+      font-weight: 700;
+      font-size: 0.9em;
+    }
+    .verified-badge {
+      color: var(--color-accent);
+      font-size: 0.75em;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* ── FAQ (used by faq-accordion partial) ── */
+    .faq-section {
+      max-width: 720px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+    .faq-section h2 {
+      font-family: var(--font-heading);
+      font-weight: var(--heading-weight);
+      color: var(--color-text);
+      text-align: center;
+      font-size: 1.3em;
+      margin-bottom: 1.5em;
+    }
+    .faq-list {
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .faq-list details {
+      border-bottom: 1px solid var(--color-border);
+    }
+    .faq-list details:last-child { border-bottom: none; }
+    .faq-list summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--color-text);
+      background: var(--color-background);
+      transition: background 0.15s;
+      list-style: none;
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: "+";
+      flex-shrink: 0;
+      margin-left: 16px;
+      color: var(--color-text-secondary);
+      font-size: 1.2em;
+    }
+    .faq-list details[open] summary::after { content: "\2212"; }
+    .faq-list summary:hover { background: var(--color-section-alt); }
+    .faq-answer {
+      padding: 4px 20px 16px;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      font-size: 0.95em;
+    }
+
+    /* ── Guarantee (used by guarantee-section partial) ── */
+    .guarantee-block {
+      max-width: 720px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+    .guarantee-inner {
+      background: var(--color-section-alt);
+      border-radius: 12px;
+      padding: 28px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .guarantee-image {
+      margin: -28px -28px 20px -28px;
+    }
+    .guarantee-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .guarantee-icon { font-size: 2.5em; margin-bottom: 12px; }
+    .guarantee-inner h2 {
+      font-family: var(--font-heading);
+      font-weight: var(--heading-weight);
+      color: var(--color-primary);
+      font-size: 1.3em;
+      margin-bottom: 12px;
+    }
+    .guarantee-inner p {
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* ── Trust icons (used by trust-icons partial) ── */
+    .trust-row {
+      max-width: 720px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+    .trust-row-inner {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      padding: 24px 0;
+    }
+    @media (max-width: 480px) {
+      .trust-row-inner { gap: 16px; }
+    }
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .trust-item svg {
+      width: 24px;
+      height: 24px;
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+    .trust-item span {
+      color: var(--color-text-secondary);
+      font-size: 0.8em;
+      line-height: 1.3;
+    }
+
+    /* ── Sticky CTA (used by sticky-mobile-cta partial) ── */
+    #sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--color-background);
+      border-top: 1px solid var(--color-border);
+      padding: 12px 20px;
+      z-index: 1000;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+    #sticky-cta.hidden { transform: translateY(100%); }
+    #sticky-cta a.cta-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 320px;
+      width: 100%;
+      min-height: 52px;
+      padding: 14px 32px;
+    }
+    body.has-sticky-cta { padding-bottom: 80px; }
+
+    /* ── Urgency banner ── */
+    .urgency-banner {
+      width: 100%;
+      background: var(--color-urgency-bg);
+      color: var(--color-cta-text);
+      text-align: center;
+      padding: 8px 20px;
+      font-size: 0.85em;
+    }
+  </style>
+
+
+  <script>
+    (function(){var p=new URLSearchParams(location.search),u={};['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(k){var v=p.get(k);if(v)u[k]=v});if(!Object.keys(u).length)return;function tag(root){root.querySelectorAll('a[href]').forEach(function(a){try{var url=new URL(a.href);Object.keys(u).forEach(function(k){url.searchParams.set(k,u[k])});a.href=url.toString()}catch(e){}});}document.addEventListener('DOMContentLoaded',function(){tag(document);new MutationObserver(function(m){m.forEach(function(r){r.addedNodes.forEach(function(n){if(n.nodeType===1)tag(n)})})}).observe(document.body,{childList:true,subtree:true})})})();
+  </script>
+
+  <script>
+  (function(){
+    var ep='https://ftwqfgojkrkdpglneifn.supabase.co/functions/v1/funnel-analytics';
+    var did='lab-test-that-lies-cortisol';
+    var ps=new URLSearchParams(location.search);
+    function send(t,d){
+      try{navigator.sendBeacon(ep,JSON.stringify(Object.assign({deployment_id:did,event_type:t,
+        utm_source:ps.get('utm_source')||'',utm_medium:ps.get('utm_medium')||'',
+        utm_campaign:ps.get('utm_campaign')||''},d||{})));}catch(e){}
+    }
+    send('page_view');
+    document.addEventListener('click',function(e){
+      var b=e.target.closest('.cta-button,[data-cta]');
+      if(b){var p=b.closest('#sticky-cta')?'sticky':b.closest('[id*="final"],.guarantee-block~*')?'final':'mid_page';
+      send('cta_click',{cta_position:p});}
+    });
+  })();
+  </script>
+</head>
+<body class="has-sticky-cta" data-deployment-id="lab-test-that-lies-cortisol">
+
+  <header style="height:56px; background:var(--color-primary); display:flex; align-items:center; justify-content:space-between; padding:0 20px;">
+    <div style="display:flex; align-items:center;">
+        <span style="color:var(--color-cta-text); font-family:var(--font-heading); font-weight:700; font-size:1.1em;">Elional</span>
+    </div>
+      <span style="color:rgba(255,255,255,0.7); font-size:0.75em; text-transform:uppercase; letter-spacing:1px;">Advertorial</span>
+    </header>
+
+  <div class="headline-block">
+    <h1>Why Your &quot;Normal&quot; Cortisol Test Missed the Real Problem</h1>
+    <p class="subheadline">The single-point blood test that told you everything was fine ,  while your cortisol rhythm was breaking down behind the scenes</p>
+    <p class="authority-line">Based on peer-reviewed research from the Journal of Clinical Medicine and International Journal of Medical Sciences</p>
+  </div>
+
+  <div class="hero-image-wrap">
+    <div class="hero-image-inner">
+      <img src="images/lab-test-that-lies-cortisol-hero.webp" alt="Why Your &quot;Normal&quot; Cortisol Test Missed the Real Problem" loading="eager" width="1200" height="800">
+    </div>
+  </div>
+
+    <div class="body-section" id="section-hero">
+      
+      <div>You knew something was wrong. The belly weight that wouldn't budge. The 3 AM wake-ups with your heart racing. The exhaustion that followed you through every day, no matter how much you slept.
+
+So you did what any intelligent woman would do. You asked for a cortisol test.
+
+And your doctor ran a single morning blood draw. "Your cortisol is normal," they said, closing your chart. "Maybe try yoga." The conversation was over. But the symptoms weren't.
+
+Here's what they didn't tell you: that single-point test missed the entire story. Your cortisol isn't supposed to stay the same all day. It's supposed to rise and fall in a very specific pattern ,  a rhythm that, when disrupted, creates every symptom you've been experiencing.
+
+The test that told you "nothing's wrong" was testing for the wrong thing entirely.</div>
+        <div class="section-image">
+          <img src="images/lab-test-that-lies-cortisol-hero.webp" alt="" loading="lazy" width="800" height="600">
+        </div>
+    </div>
+
+    <div class="body-section" id="section-background-story">
+      <h2>The Story Every Woman Over 40 Knows Too Well</h2>
+      <div>Sarah's story might sound familiar. At 45, she was managing a team of 12, raising two teenagers, and keeping her household running. She'd always been the capable one ,  the woman everyone turned to when things needed to get done.
+
+Then perimenopause hit like a freight train.
+
+First came the sleep disruption. She'd fall asleep fine, then wake up at 3 AM with her mind racing and her heart pounding. Then the weight started accumulating around her midsection ,  despite eating the same foods and doing the same workouts that had worked for decades.
+
+The brain fog made her feel like she was losing her edge at work. The mood swings made her feel like a stranger to herself. And the energy? Gone. Completely gone.
+
+"I went from being the most reliable person I knew to feeling like I was falling apart," Sarah told me. "And the worst part was that everyone kept telling me I was fine."
+
+Three different doctors ran cortisol tests. All came back normal. One prescribed antidepressants. Another suggested she was "just stressed" and needed better work-life balance.
+
+But Sarah knew this wasn't stress. This was something else entirely.</div>
+        <div class="section-image">
+          <img src="images/lab-test-that-lies-cortisol-sec-02.webp" alt="The Story Every Woman Over 40 Knows Too Well" loading="lazy" width="800" height="600">
+        </div>
+    </div>
+
+    <div class="body-section" id="section-root-cause">
+      <h2>The Hidden Problem with Standard Cortisol Testing</h2>
+      <div>Here's what your doctor didn't explain: cortisol isn't like cholesterol or blood sugar. It's not supposed to stay stable all day. Healthy cortisol follows a precise daily rhythm ,  high in the morning to get you moving, then gradually declining to prepare your body for restorative sleep.
+
+Think of it like a symphony. Each hormone has to come in at exactly the right time, at exactly the right level, or the entire performance falls apart.
+
+But standard cortisol testing takes a single snapshot ,  usually between 8-10 AM when cortisol should naturally be at its peak. It's like judging an entire symphony by listening to only the opening notes.
+
+What it misses is the rhythm breakdown that happens during perimenopause. Your morning cortisol might test "normal" while your evening cortisol ,  which should be dropping to nearly zero ,  stays elevated. This creates what researchers call "cortisol dysregulation."
+
+When cortisol stays high when it should be low:
+• Your body can't enter deep, restorative sleep
+• Fat storage shifts to your midsection
+• Your nervous system can't downshift from "alert" to "calm"
+• Your blood sugar becomes harder to regulate
+• Your brain stays in hypervigilant mode
+
+That single morning test told you cortisol was normal. What it didn't tell you was that your cortisol rhythm ,  the rise and fall pattern that controls everything from sleep to metabolism ,  was completely disrupted.</div>
+        <div class="section-image">
+          <img src="images/lab-test-that-lies-cortisol-sec-03.webp" alt="The Hidden Problem with Standard Cortisol Testing" loading="lazy" width="800" height="600">
+        </div>
+    </div>
+
+    <div class="body-section" id="section-consequences">
+      <h2>What Happens When the Rhythm Breaks Down</h2>
+      <div>Sarah's cortisol pattern looked normal at 9 AM. But by 9 PM, when it should have been winding down, it was still running at morning levels. Her body was getting the "stay alert" signal 16 hours a day.
+
+This is why the sleep problems came first. When cortisol doesn't drop in the evening, your nervous system can't transition into rest mode. You might fall asleep initially ,  exhaustion wins ,  but cortisol spikes around 2-4 AM, jolting you awake with racing thoughts.
+
+The belly weight followed because elevated evening cortisol triggers a specific type of fat storage. Your body thinks it's in survival mode, so it stores energy as visceral fat around your organs ,  the most accessible fuel for a perceived emergency that never ends.
+
+And the energy crashes? When cortisol is dysregulated, it can't provide the steady fuel your body needs throughout the day. Instead, you get spikes and crashes ,  wired but tired, exhausted but unable to rest.
+
+Without intervention, this pattern becomes self-reinforcing. Poor sleep disrupts hormones further. Chronic fatigue makes everything feel harder. The weight gain affects confidence and mood. And the cycle deepens.
+
+The women who don't address cortisol rhythm disruption often find themselves on a slow slide toward medications they never thought they'd need ,  sleep aids, antidepressants, anxiety medications ,  treating symptoms while the root cause continues unchecked.</div>
+        <div class="section-image">
+          <img src="images/lab-test-that-lies-cortisol-sec-04.webp" alt="What Happens When the Rhythm Breaks Down" loading="lazy" width="800" height="600">
+        </div>
+    </div>
+
+    <div class="body-section" id="section-mechanism">
+      <h2>How to Reset the Cortisol Rhythm That Standard Medicine Ignores</h2>
+      <div>The solution isn't more testing. It's supporting the HPA axis ,  the hypothalamic-pituitary-adrenal system that controls cortisol production ,  with compounds that have been clinically studied for exactly this mechanism.
+
+Think of the HPA axis like a thermostat that's gotten stuck. It's not broken ,  it's just not responding to the signals that should tell it to cool down. The right nutrients can help recalibrate that system.
+
+Three specific compounds show the strongest evidence for HPA axis support:
+
+**KSM-66 Ashwagandha** works directly on the hypothalamic-pituitary-adrenal axis. In peer-reviewed studies, participants taking 300mg daily showed significant improvements in cortisol levels and stress response within 8 weeks. Importantly, KSM-66 is the specific extract used in those clinical trials ,  not generic ashwagandha root powder.
+
+**Magnesium Glycinate** supports the nervous system's ability to downshift from sympathetic (alert) to parasympathetic (calm) mode. Most women are deficient in magnesium, and the glycinate form is the most bioavailable ,  it actually gets absorbed rather than passing through unused.
+
+**L-Theanine** promotes what researchers call "calm alertness" ,  the ability to feel relaxed without sedation. At 400mg (double the standard dose), it helps interrupt the racing thoughts and physical tension that keep cortisol elevated.
+
+Together, these compounds work on different parts of the stress response system. It's not about forcing cortisol down ,  it's about giving your HPA axis the support it needs to remember how to function properly.
+
+Sarah started feeling the shift within 2 weeks. "My 3 AM wake-ups became 5 AM wake-ups, then eventually stopped happening at all," she told me. "The belly weight took longer ,  about 8 weeks ,  but once my cortisol rhythm stabilized, my body finally remembered how to let go of that stress storage."</div>
+        <div class="section-image">
+          <img src="images/lab-test-that-lies-cortisol-sec-05.webp" alt="How to Reset the Cortisol Rhythm That Standard Medicine Ignores" loading="lazy" width="800" height="600">
+        </div>
+    </div>
+
+      <div class="mid-page-cta">
+        <div class="cta-card-wrap">
+          <div class="cta-card-inner">
+            <div class="cta-card-flex">
+              <div class="cta-card-content">
+                <h2>Get Your Cortisol Rhythm Back on Track</h2>
+                <ul class="cta-benefits">
+                  <li><span class="cta-check">&#10003;</span> 300mg KSM-66 Ashwagandha</li>
+                  <li><span class="cta-check">&#10003;</span> 400mg L-Theanine (clinical dose)</li>
+                  <li><span class="cta-check">&#10003;</span> Third-party tested for purity</li>
+                  <li><span class="cta-check">&#10003;</span> 60-day money-back guarantee</li>
+                </ul>
+                <div class="cta-button-wrap">
+                  <a href="https://elional.com/products/calming-drink-mix" class="cta-button">Check Availability</a>
+                </div>
+                <p class="cta-trust-line">60-Day Money-Back Guarantee · Made in UAE</p>
+              </div>
+            </div>
+          </div>
+        </div>      </div>
+    <div class="body-section" id="section-product-buildup">
+      <h2>Why Most &quot;Cortisol Supplements&quot; Miss the Mark</h2>
+      <div>After Sarah's story started spreading in our perimenopause support group, dozens of women asked the same question: "What exactly did you take?"
+
+She tried to explain the three-ingredient combination, but most women came back frustrated. They couldn't find KSM-66 in the right dose. The magnesium they found was magnesium oxide (poorly absorbed). The L-theanine was only 200mg ,  half the amount that showed benefits in the research.
+
+And when they tried to piece together individual supplements, they faced another problem: timing. KSM-66 works best taken consistently. Magnesium glycinate is most effective in the evening. L-theanine provides calm-alertness that's helpful throughout the day.
+
+Most cortisol supplements on the market use generic ashwagandha root powder ,  not the KSM-66 extract that was actually studied. They add a dozen "stress-supporting" herbs in tiny doses rather than using clinical amounts of the nutrients with the strongest evidence.
+
+The women who succeeded with Sarah's approach were the ones who found a way to get all three ingredients in the right forms, at the right doses, in a format they'd actually use consistently.
+
+"I needed something that felt like taking care of myself, not like taking medicine," one woman told me. "The pills felt clinical. But a drink I could look forward to? That felt like a ritual."
+
+That's when several of us started looking for a company that understood what we actually needed.</div>
+        <div class="section-image">
+          <img src="images/lab-test-that-lies-cortisol-sec-06.webp" alt="Why Most &quot;Cortisol Supplements&quot; Miss the Mark" loading="lazy" width="800" height="600">
+        </div>
+    </div>
+
+    <div class="body-section" id="section-product-reveal">
+      <h2>The Cortisol Support That Finally Makes Sense</h2>
+      <div>After months of research, we found Elional FeelGood ,  the first cortisol support formulated specifically for women dealing with rhythm dysregulation, not just general stress.
+
+FeelGood contains:
+• **300mg KSM-66 Ashwagandha** ,  the exact form and dose used in peer-reviewed cortisol studies
+• **400mg L-Theanine** ,  double the standard dose for calm-alertness without sedation  
+• **100mg Magnesium Glycinate** ,  the most bioavailable form for nervous system support
+
+No proprietary blends hiding doses. No kitchen-sink approach with 15 different herbs. Just three clinically-studied ingredients at the amounts that actually matter.
+
+But what makes FeelGood different is the delivery format. Instead of pills that feel medicinal, it's a drink mix that dissolves into a raspberry lemonade ritual. Something you can actually look forward to ,  your 5 PM reset, your signal to your nervous system that the day is done.
+
+The women in our group who've been using FeelGood consistently report the same progression Sarah experienced:
+
+**Week 1-2:** Sleep feels more restorative. The 3 AM wake-ups become less frequent.
+**Week 3-4:** Energy feels more stable throughout the day. Less wired-but-tired.
+**Week 6-8:** The belly weight that wouldn't respond to diet and exercise finally starts shifting.
+**Week 8-12:** The old sense of being in control of your body starts returning.
+
+Elional backs FeelGood with a 60-day money-back guarantee because they understand that cortisol rhythm restoration isn't instant. It takes time for your HPA axis to recalibrate. But when it does, you'll know.</div>
+        <div class="section-image">
+          <img src="images/lab-test-that-lies-cortisol-sec-07.webp" alt="The Cortisol Support That Finally Makes Sense" loading="lazy" width="800" height="600">
+        </div>
+    </div>
+
+    <div class="body-section" id="section-social-proof">
+      <h2>What Happens When You Finally Address the Real Problem</h2>
+      <div>"I wish I could tell every woman who's been dismissed by their doctor about FeelGood. My cortisol test still comes back 'normal' ,  but I sleep through the night now. The belly weight is finally coming off. I feel like myself again." ,  Maria K., 47
+
+"After three doctors told me my labs were fine, I'd started thinking I was crazy. FeelGood gave me my life back. The afternoon crashes are gone. I can think clearly again. And my clothes fit the way they used to." ,  Jennifer L., 43
+
+"I tried magnesium supplements before, but they just made me tired. FeelGood doesn't make me sleepy ,  it makes me calm. There's a huge difference. I can finally wind down at the end of the day." ,  Rebecca M., 49
+
+"My husband says I'm like a different person since I started drinking FeelGood. More patient, more present. I realize now that the irritability wasn't just 'perimenopause mood swings' ,  it was my nervous system running on overdrive 24/7." ,  Lisa D., 45
+
+Over 23,000 women have discovered what happens when you support the cortisol rhythm instead of just treating symptoms. The results speak for themselves: 4.7-star average rating from women who understand exactly what you're going through.
+
+Third-party tested for purity and potency. Made in the USA in GMP-certified facilities. No artificial colors, no artificial sweeteners, no ingredients you can't pronounce.</div>
+        <div class="section-image">
+          <img src="images/lab-test-that-lies-cortisol-sec-08.webp" alt="What Happens When You Finally Address the Real Problem" loading="lazy" width="800" height="600">
+        </div>
+    </div>
+
+    <div class="body-section" id="section-urgency">
+      <h2>Your Cortisol Rhythm Won&#x27;t Fix Itself</h2>
+      <div>The cortisol dysregulation that starts in perimenopause doesn't resolve on its own. Without support, the pattern typically worsens over time ,  sleep becomes more elusive, weight becomes harder to manage, energy becomes more unpredictable.
+
+But here's what we've learned from the thousands of women who've addressed this early: the sooner you support your HPA axis, the easier it is to restore balance. The women who wait often find they need more intensive intervention later.
+
+Sarah wishes she'd started FeelGood two years earlier. "I spent so much time thinking something was wrong with me," she told me recently. "If I'd understood it was just my cortisol rhythm, I could have avoided so much frustration."
+
+Right now, you can try FeelGood risk-free for 60 days. If you don't notice the sleep becoming more restorative, the energy becoming more stable, and the stress weight starting to shift, you'll get every penny back.
+
+No questions asked. No hoops to jump through.
+
+Because we believe what you've known all along: your symptoms are real, your experience matters, and you deserve support that actually addresses what's happening in your body.
+
+**Limited time: Save 35% on your first supply**
+
+Your cortisol rhythm has been disrupted long enough. It's time to give it the support it needs to remember how to function properly.
+
+**Order FeelGood now and start your cortisol reset today.**</div>
+        <div class="section-image">
+          <img src="images/lab-test-that-lies-cortisol-sec-09.webp" alt="Your Cortisol Rhythm Won&#x27;t Fix Itself" loading="lazy" width="800" height="600">
+        </div>
+    </div>
+
+
+  <div class="social-proof-section">
+    <h2>What Others Are Saying</h2>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"I wish I could tell every woman who&#x27;s been dismissed by their doctor about FeelGood. My cortisol test still comes back &#x27;normal&#x27; ,  but I sleep through the night now. The belly weight is finally coming off. I feel like myself again."</blockquote>
+      <div class="review-meta">
+        <span class="review-name">Maria K.</span>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"After three doctors told me my labs were fine, I&#x27;d started thinking I was crazy. FeelGood gave me my life back. The afternoon crashes are gone. I can think clearly again."</blockquote>
+      <div class="review-meta">
+        <span class="review-name">Jennifer L.</span>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"I tried magnesium supplements before, but they just made me tired. FeelGood doesn&#x27;t make me sleepy ,  it makes me calm. There&#x27;s a huge difference. I can finally wind down at the end of the day."</blockquote>
+      <div class="review-meta">
+        <span class="review-name">Rebecca M.</span>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"My husband says I&#x27;m like a different person since I started drinking FeelGood. More patient, more present. The irritability wasn&#x27;t just &#x27;perimenopause mood swings&#x27; ,  it was my nervous system running on overdrive."</blockquote>
+      <div class="review-meta">
+        <span class="review-name">Lisa D.</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="final-cta">
+    <div class="cta-card-wrap">
+      <div class="cta-card-inner">
+        <div class="cta-card-flex">
+          <div class="cta-card-content">
+            <h2>Get Your Cortisol Rhythm Back on Track</h2>
+            <ul class="cta-benefits">
+              <li><span class="cta-check">&#10003;</span> 300mg KSM-66 Ashwagandha</li>
+              <li><span class="cta-check">&#10003;</span> 400mg L-Theanine (clinical dose)</li>
+              <li><span class="cta-check">&#10003;</span> Third-party tested for purity</li>
+              <li><span class="cta-check">&#10003;</span> 60-day money-back guarantee</li>
+            </ul>
+            <div class="cta-button-wrap">
+              <a href="https://elional.com/products/calming-drink-mix" class="cta-button">Check Availability</a>
+            </div>
+            <p class="cta-trust-line">60-Day Money-Back Guarantee · Made in UAE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details>
+        <summary>How is this different from other cortisol supplements?</summary>
+        <div class="faq-answer">FeelGood uses KSM-66 Ashwagandha ,  the specific extract used in peer-reviewed cortisol studies ,  not generic ashwagandha root powder. We also include 400mg L-Theanine (double the standard dose) and magnesium glycinate in the most bioavailable form. No proprietary blends, no hidden doses.</div>
+      </details>
+      <details>
+        <summary>Will this interfere with my hormone therapy?</summary>
+        <div class="faq-answer">FeelGood contains nutrients, not hormones, so it doesn&#x27;t interfere with hormone replacement therapy. However, we always recommend discussing any new supplement with your healthcare provider, especially if you&#x27;re on HRT or other medications.</div>
+      </details>
+      <details>
+        <summary>How long before I notice changes?</summary>
+        <div class="faq-answer">Most women notice sleep quality improvements within 10-14 days. Energy stability usually follows within 2-4 weeks. The stress weight around the midsection typically starts shifting after 6-8 weeks as the cortisol rhythm stabilizes.</div>
+      </details>
+      <details>
+        <summary>Is this safe for long-term use?</summary>
+        <div class="faq-answer">Yes. These are nutrients your body needs for optimal function. KSM-66 Ashwagandha has been studied for up to 2 years of continuous use with no adverse effects. Many women use FeelGood as their daily cortisol rhythm support indefinitely.</div>
+      </details>
+      <details>
+        <summary>What if my cortisol test came back normal?</summary>
+        <div class="faq-answer">Standard cortisol tests only measure a single point in time, usually morning when cortisol should naturally be high. This misses rhythm disruptions where cortisol stays elevated when it should drop. Your symptoms are real even if your single-point test was &#x27;normal.&#x27;</div>
+      </details>
+    </div>
+  </div>
+
+  <div class="guarantee-block">
+    <div class="guarantee-inner">
+      <div class="guarantee-image">
+        <img src="images/lab-test-that-lies-cortisol-guarantee.webp" alt="60-Day Money-Back Guarantee" loading="lazy">
+      </div>
+      <h2>60-Day Money-Back Guarantee</h2>
+      <p>Try FeelGood risk-free for 60 days. If you don&#x27;t notice improved sleep quality, more stable energy, and the stress weight starting to shift, return it for a full refund. No questions asked.</p>
+    </div>
+  </div>
+  <div class="trust-row">
+    <div class="trust-row-inner">
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span>Money-Back<br>Guarantee</span>
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <span>Free<br>Shipping</span>
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span>Secure<br>Checkout</span>
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span>Verified<br>Reviews</span>
+      </div>
+    </div>
+  </div>
+  <div id="sticky-cta">
+    <a href="https://elional.com/products/calming-drink-mix" class="cta-button">Check Availability</a>
+  </div>
+  <script>
+    (function(){
+      var trigger = 0.4;
+      var el = document.getElementById('sticky-cta');
+      var lastScrollY = 0;
+      var isVisible = false;
+      window.addEventListener('scroll', function(){
+        var scrollPct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+        if (scrollPct >= trigger && !isVisible) {
+          el.style.display = 'flex';
+          el.classList.remove('hidden');
+          isVisible = true;
+        } else if (scrollPct < trigger && isVisible) {
+          el.classList.add('hidden');
+          setTimeout(function(){ if (el.classList.contains('hidden')) { el.style.display = 'none'; isVisible = false; } }, 300);
+        }
+        lastScrollY = window.scrollY;
+      }, { passive: true });
+    })();
+  </script></body>
+</html>
