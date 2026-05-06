@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9 Reasons Why Metformin Works for Some PCOS Women But Not You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #6DBAE8;
+      --color-secondary: #D4724A;
+      --color-accent: #D4724A;
+      --color-cta: #6DBAE8;
+      --color-cta-text: #ffffff;
+      --color-cta-hover: #6DBAE8;
+      --color-urgency-bg: #fff3cd;
+      --color-background: #ffffff;
+      --color-text: #1a1a2e;
+      --color-text-secondary: #6c757d;
+      --color-border: #dee2e6;
+      --color-section-alt: #f8f9fa;
+      --font-heading: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --heading-weight: 700;
+      --body-weight: 400;
+      --body-size: 16px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body);
+      font-size: var(--body-size);
+      font-weight: var(--body-weight);
+      line-height: 1.7;
+      color: var(--color-text);
+      background: var(--color-background);
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* ── Headline ── */
+    .headline-block { text-align: center; padding: 2.5em 20px 1.5em; }
+    .headline-block h1 {
+      font-family: var(--font-heading);
+      font-weight: var(--heading-weight);
+      color: var(--color-text);
+      line-height: 1.25;
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+    }
+    .headline-block .subheadline {
+      color: var(--color-text-secondary);
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 1em auto 0;
+      line-height: 1.5;
+    }
+    .headline-block .authority-line {
+      color: var(--color-text-secondary);
+      font-size: 0.9em;
+      margin-top: 0.75em;
+    }
+
+    /* ── Opening section ── */
+    .opening-section {
+      max-width: 720px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+    .opening-section p {
+      color: var(--color-text);
+      line-height: 1.7;
+      text-align: left;
+      margin-bottom: 1em;
+    }
+    .opening-section p:last-child { margin-bottom: 0; }
+
+    /* ── List item card ── */
+    .list-item-card {
+      max-width: 720px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+    .list-item-inner {
+      background: var(--color-background);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      overflow: hidden;
+    }
+    .list-item-flex {
+      display: flex;
+      flex-direction: column;
+    }
+    @media (min-width: 768px) {
+      .list-item-flex { flex-direction: row; }
+      .list-item-flex.zigzag-reverse { flex-direction: row-reverse; }
+      .list-item-image-wrap { width: 55%; flex-shrink: 0; }
+      .list-item-text-wrap { width: 45%; }
+    }
+    .list-item-image-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-section-alt);
+      padding: 16px;
+    }
+    @media (min-width: 768px) {
+      .list-item-image-wrap { padding: 20px; }
+    }
+    .list-item-image-wrap img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: contain;
+      aspect-ratio: 1 / 1;
+    }
+    .list-item-image-wrap .placeholder {
+      aspect-ratio: 1 / 1;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-secondary);
+      font-size: 0.85em;
+      text-align: center;
+    }
+    .list-item-text-wrap {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media (min-width: 768px) {
+      .list-item-text-wrap { padding: 24px; }
+    }
+    .reason-badge {
+      color: var(--color-accent);
+      font-size: 0.75em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .list-item-text-wrap h2 {
+      font-family: var(--font-heading);
+      font-weight: var(--heading-weight);
+      color: var(--color-text);
+      font-size: 1.25em;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+    .list-item-text-wrap p {
+      color: var(--color-text);
+      line-height: 1.7;
+      text-align: left;
+      margin-bottom: 12px;
+      font-size: 0.95em;
+    }
+    .list-item-text-wrap p:last-child { margin-bottom: 0; }
+    .list-item-cta {
+      margin-top: 16px;
+    }
+
+    /* ── CTA card ── */
+    .cta-card-wrap {
+      max-width: 720px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+    .cta-card-inner {
+      border-radius: 12px;
+      padding: 24px;
+      background: var(--color-section-alt);
+    }
+    @media (min-width: 768px) {
+      .cta-card-inner { padding: 28px; }
+      .cta-card-flex { display: flex; gap: 24px; align-items: center; }
+      .cta-card-image { width: 40%; flex-shrink: 0; }
+      .cta-card-content { width: 60%; }
+    }
+    .cta-card-image {
+      margin-bottom: 16px;
+    }
+    @media (min-width: 768px) {
+      .cta-card-image { margin-bottom: 0; }
+    }
+    .cta-card-image .product-img-container {
+      aspect-ratio: 1 / 1;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-border);
+    }
+    .cta-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .cta-card-content {
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .cta-card-content { text-align: left; }
+    }
+    .cta-card-content h2 {
+      font-family: var(--font-heading);
+      font-weight: var(--heading-weight);
+      color: var(--color-text);
+      font-size: 1.3em;
+      margin-bottom: 16px;
+    }
+    .cta-benefits { list-style: none; margin-bottom: 20px; }
+    .cta-benefits li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.95em;
+      color: var(--color-text);
+      margin-bottom: 8px;
+    }
+    @media (max-width: 767px) {
+      .cta-benefits li { justify-content: center; }
+    }
+    .cta-benefits li:last-child { margin-bottom: 0; }
+    .cta-check {
+      color: var(--color-accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ── CTA button ── */
+    a.cta-button {
+      display: inline-block;
+      background: var(--color-cta);
+      color: var(--color-cta-text);
+      padding: 16px 48px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: 700;
+      font-family: var(--font-body);
+      text-align: center;
+      transition: background 0.2s, transform 0.1s;
+    }
+    a.cta-button:hover { background: var(--color-cta-hover); transform: translateY(-1px); }
+    a.cta-button:active { transform: translateY(0); }
+    a.cta-button.full-width { display: block; width: 100%; font-size: 1.15em; }
+    .cta-button-wrap {
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .cta-card-flex .cta-button-wrap { text-align: left; }
+    }
+    .cta-trust-line {
+      margin-top: 12px;
+      font-size: 0.85em;
+      color: var(--color-text-secondary);
+    }
+    .cta-payment-line {
+      margin-top: 4px;
+      font-size: 0.8em;
+      color: var(--color-text-secondary);
+    }
+
+    /* ── Social proof ── */
+    .social-proof-section {
+      max-width: 720px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+    .social-proof-section h2 {
+      font-family: var(--font-heading);
+      font-weight: var(--heading-weight);
+      color: var(--color-text);
+      text-align: center;
+      font-size: 1.3em;
+      margin-bottom: 1.5em;
+    }
+    .review-card {
+      background: var(--color-background);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .review-stars {
+      color: var(--color-accent);
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+    .review-card blockquote {
+      color: var(--color-text);
+      line-height: 1.6;
+      margin: 0 0 12px;
+      font-style: normal;
+    }
+    .review-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .review-name {
+      color: var(--color-text-secondary);
+      font-weight: 700;
+      font-size: 0.9em;
+    }
+    .verified-badge {
+      color: var(--color-accent);
+      font-size: 0.75em;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* ── FAQ ── */
+    .faq-section {
+      max-width: 720px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+    .faq-section h2 {
+      font-family: var(--font-heading);
+      font-weight: var(--heading-weight);
+      color: var(--color-text);
+      text-align: center;
+      font-size: 1.3em;
+      margin-bottom: 1.5em;
+    }
+    .faq-list {
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .faq-list details {
+      border-bottom: 1px solid var(--color-border);
+    }
+    .faq-list details:last-child { border-bottom: none; }
+    .faq-list summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--color-text);
+      background: var(--color-background);
+      transition: background 0.15s;
+      list-style: none;
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: "+";
+      flex-shrink: 0;
+      margin-left: 16px;
+      color: var(--color-text-secondary);
+      font-size: 1.2em;
+    }
+    .faq-list details[open] summary::after { content: "\2212"; }
+    .faq-list summary:hover { background: var(--color-section-alt); }
+    .faq-answer {
+      padding: 4px 20px 16px;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      font-size: 0.95em;
+    }
+
+    /* ── Guarantee ── */
+    .guarantee-block {
+      max-width: 720px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+    .guarantee-inner {
+      background: var(--color-section-alt);
+      border-radius: 12px;
+      padding: 28px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .guarantee-image {
+      margin: -28px -28px 20px -28px;
+    }
+    .guarantee-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .guarantee-icon { font-size: 2.5em; margin-bottom: 12px; }
+    .guarantee-inner h2 {
+      font-family: var(--font-heading);
+      font-weight: var(--heading-weight);
+      color: var(--color-primary);
+      font-size: 1.3em;
+      margin-bottom: 12px;
+    }
+    .guarantee-inner p {
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* ── Trust icons ── */
+    .trust-row {
+      max-width: 720px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+    .trust-row-inner {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      padding: 24px 0;
+    }
+    @media (max-width: 480px) {
+      .trust-row-inner { gap: 16px; }
+    }
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .trust-item svg {
+      width: 24px;
+      height: 24px;
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+    .trust-item span {
+      color: var(--color-text-secondary);
+      font-size: 0.8em;
+      line-height: 1.3;
+    }
+
+    /* ── Sticky CTA ── */
+    #sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--color-background);
+      border-top: 1px solid var(--color-border);
+      padding: 12px 20px;
+      z-index: 1000;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+    #sticky-cta.hidden { transform: translateY(100%); }
+    #sticky-cta a.cta-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 320px;
+      width: 100%;
+      min-height: 52px;
+      padding: 14px 32px;
+    }
+
+    /* Padding for sticky CTA */
+    body.has-sticky-cta { padding-bottom: 80px; }
+
+    /* Mid-page CTA — always centered (overrides desktop left-align) */
+    .mid-page-cta .cta-card-content { width: 100%; text-align: center; }
+    .mid-page-cta .cta-card-flex { justify-content: center; }
+    .mid-page-cta .cta-button-wrap { text-align: center; }
+  </style>
+
+  <script>
+    (function(){var p=new URLSearchParams(location.search),u={};['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(k){var v=p.get(k);if(v)u[k]=v});if(!Object.keys(u).length)return;function tag(root){root.querySelectorAll('a[href]').forEach(function(a){try{var url=new URL(a.href);Object.keys(u).forEach(function(k){url.searchParams.set(k,u[k])});a.href=url.toString()}catch(e){}});}document.addEventListener('DOMContentLoaded',function(){tag(document);new MutationObserver(function(m){m.forEach(function(r){r.addedNodes.forEach(function(n){if(n.nodeType===1)tag(n)})})}).observe(document.body,{childList:true,subtree:true})})})();
+  </script>
+
+  <script>
+  (function(){
+    var ep='https://ftwqfgojkrkdpglneifn.supabase.co/functions/v1/funnel-analytics';
+    var did='metformin-pcos-types-cortisol-truth';
+    var ps=new URLSearchParams(location.search);
+    function send(t,d){
+      try{navigator.sendBeacon(ep,JSON.stringify(Object.assign({deployment_id:did,event_type:t,
+        utm_source:ps.get('utm_source')||'',utm_medium:ps.get('utm_medium')||'',
+        utm_campaign:ps.get('utm_campaign')||''},d||{})));}catch(e){}
+    }
+    send('page_view');
+    document.addEventListener('click',function(e){
+      var b=e.target.closest('.cta-button,[data-cta]');
+      if(b){var p=b.closest('#sticky-cta')?'sticky':b.closest('[id*="final"],.guarantee-block~*')?'final':b.closest('.list-item-card')?'per_item':'mid_page';
+      send('cta_click',{cta_position:p});}
+    });
+  })();
+  </script>
+</head>
+<body class="has-sticky-cta" data-deployment-id="metformin-pcos-types-cortisol-truth">
+
+  <header style="height:56px; background:var(--color-primary); display:flex; align-items:center; justify-content:space-between; padding:0 20px;">
+    <div style="display:flex; align-items:center;">
+        <span style="color:var(--color-cta-text); font-family:var(--font-heading); font-weight:700; font-size:1.1em;">Elional</span>
+    </div>
+      <span style="color:rgba(255,255,255,0.7); font-size:0.75em; text-transform:uppercase; letter-spacing:1px;">Advertorial</span>
+    </header>
+
+  <div class="headline-block">
+    <h1>9 Reasons Why Metformin Works for Some PCOS Women But Not You</h1>
+    <p class="subheadline">The heartbreaking truth about why community success stories don&#x27;t match your reality ,  and what to do when you&#x27;re the one it didn&#x27;t work for</p>
+    <p class="authority-line">Based on research from peer-reviewed studies on adrenal PCOS and cortisol management in women</p>
+  </div>
+
+      <div class="opening-section">
+        <div><p>You've read the success stories. Sarah lost 30 pounds on metformin. Jessica's periods came back after three months. The Cysterhood is full of women who found their answer in a little white pill.</p><p>You tried it too. Maybe for six months. Maybe for two years. Your A1C improved. Your fasting glucose dropped. But the weight stayed. The hair kept growing. The cycles stayed broken.</p><p>You're not broken. Metformin works ,  but only for one type of PCOS. If you have the other type, you could take it for decades and never see the changes everyone else talks about.</p></div>
+      </div>
+
+
+      <div class="list-item-card">
+        <div class="list-item-inner">
+          <div class="list-item-flex">
+            <div class="list-item-image-wrap">
+                <img src="images/metformin-pcos-types-cortisol-truth-item-1.webp" alt="1. Your PCOS Isn&#x27;t Insulin-Driven" loading="lazy" width="800" height="800">
+            </div>
+            <div class="list-item-text-wrap">
+              <div class="reason-badge">REASON 1</div>
+              <h2>1. Your PCOS Isn&#x27;t Insulin-Driven</h2>
+              <div><p><strong>67% of PCOS women have insulin resistance. But that means 33% don't.</strong></p><p>Metformin is an insulin sensitizer. It helps your cells use glucose more efficiently. If your PCOS isn't driven by insulin resistance, metformin is treating the wrong mechanism. You can have perfect insulin sensitivity and still have PCOS ,  because yours is driven by cortisol, not carbs.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="list-item-card">
+        <div class="list-item-inner">
+          <div class="list-item-flex zigzag-reverse">
+            <div class="list-item-image-wrap">
+                <img src="images/metformin-pcos-types-cortisol-truth-item-2.webp" alt="2. You Have Adrenal PCOS" loading="lazy" width="800" height="800">
+            </div>
+            <div class="list-item-text-wrap">
+              <div class="reason-badge">REASON 2</div>
+              <h2>2. You Have Adrenal PCOS</h2>
+              <div><p><strong>Adrenal PCOS is driven by DHEA-S, not insulin.</strong> Your ovaries aren't the problem ,  your adrenal glands are.</p><p>When cortisol stays elevated, your adrenals pump out DHEA-S. DHEA-S converts to testosterone. That's what's driving your symptoms. Metformin doesn't touch adrenal androgens. It's like trying to fix a plumbing leak by adjusting the thermostat.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="list-item-card">
+        <div class="list-item-inner">
+          <div class="list-item-flex">
+            <div class="list-item-image-wrap">
+                <img src="images/metformin-pcos-types-cortisol-truth-item-3.webp" alt="3. Your Stress History Tells the Story" loading="lazy" width="800" height="800">
+            </div>
+            <div class="list-item-text-wrap">
+              <div class="reason-badge">REASON 3</div>
+              <h2>3. Your Stress History Tells the Story</h2>
+              <div><p><strong>PCOS symptoms that started during college, divorce, job stress, or major life changes are usually adrenal.</strong></p><p>Insulin PCOS often shows up at puberty or gradually over time. Adrenal PCOS shows up suddenly during periods of chronic stress. Your body's stress response got stuck in the 'on' position. Metformin can't turn it off.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="list-item-card">
+        <div class="list-item-inner">
+          <div class="list-item-flex zigzag-reverse">
+            <div class="list-item-image-wrap">
+                <img src="images/metformin-pcos-types-cortisol-truth-item-4.webp" alt="4. Your Labs Are &#x27;Normal&#x27; But You Feel Terrible" loading="lazy" width="800" height="800">
+            </div>
+            <div class="list-item-text-wrap">
+              <div class="reason-badge">REASON 4</div>
+              <h2>4. Your Labs Are &#x27;Normal&#x27; But You Feel Terrible</h2>
+              <div><p><strong>Standard PCOS labs miss adrenal markers entirely.</strong></p><p>Your doctor tests glucose, insulin, maybe testosterone. But DHEA-S? Cortisol rhythm? 17-hydroxyprogesterone? Those are the markers that reveal adrenal PCOS. Most women with adrenal PCOS have 'normal' standard labs while feeling completely broken inside.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mid-page-cta">
+        <div class="cta-card-wrap">
+          <div class="cta-card-inner">
+            <div class="cta-card-flex">
+              <div class="cta-card-content">
+                <h2>Finally Address the Real Cause of Your PCOS</h2>
+                <ul class="cta-benefits">
+                  <li><span class="cta-check">&#10003;</span> KSM-66 Ashwagandha for cortisol support</li>
+                  <li><span class="cta-check">&#10003;</span> Magnesium glycinate for sleep restoration</li>
+                  <li><span class="cta-check">&#10003;</span> PCOS-informed formulation</li>
+                  <li><span class="cta-check">&#10003;</span> 60-day money-back guarantee</li>
+                </ul>
+                <div class="cta-button-wrap">
+                  <a href="https://elional.com/products/calming-drink-mix" class="cta-button">Check Availability</a>
+                </div>
+                <p class="cta-trust-line">60-Day Money-Back Guarantee · Made in UAE</p>
+              </div>
+            </div>
+          </div>
+        </div>      </div>
+
+
+      <div class="list-item-card">
+        <div class="list-item-inner">
+          <div class="list-item-flex">
+            <div class="list-item-image-wrap">
+                <img src="images/metformin-pcos-types-cortisol-truth-item-5.webp" alt="5. You Tried Everything Else First" loading="lazy" width="800" height="800">
+            </div>
+            <div class="list-item-text-wrap">
+              <div class="reason-badge">REASON 5</div>
+              <h2>5. You Tried Everything Else First</h2>
+              <div><p><strong>The metformin-doesn't-work pattern usually looks like this: tried dietary changes, added exercise, maybe spironolactone, then metformin as the 'last resort.'</strong></p><p>But if your PCOS is cortisol-driven, you're working backwards. Cortisol disrupts every other intervention. High cortisol makes your body store fat despite perfect nutrition. It blocks the benefits of exercise. It can even reduce the effectiveness of other medications.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="list-item-card">
+        <div class="list-item-inner">
+          <div class="list-item-flex zigzag-reverse">
+            <div class="list-item-image-wrap">
+                <img src="images/metformin-pcos-types-cortisol-truth-item-6.webp" alt="6. Your Sleep Never Recovered" loading="lazy" width="800" height="800">
+            </div>
+            <div class="list-item-text-wrap">
+              <div class="reason-badge">REASON 6</div>
+              <h2>6. Your Sleep Never Recovered</h2>
+              <div><p><strong>Women with insulin PCOS can still sleep. Women with adrenal PCOS wake up at 3 AM.</strong></p><p>That middle-of-the-night cortisol spike is your adrenals' way of saying they're still in crisis mode. Metformin doesn't regulate cortisol rhythms. You need interventions that tell your HPA axis it's safe to rest. Otherwise, every night of broken sleep creates more DHEA-S tomorrow.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="list-item-card">
+        <div class="list-item-inner">
+          <div class="list-item-flex">
+            <div class="list-item-image-wrap">
+                <img src="images/metformin-pcos-types-cortisol-truth-item-7.webp" alt="7. You Respond Better to Stress Management" loading="lazy" width="800" height="800">
+            </div>
+            <div class="list-item-text-wrap">
+              <div class="reason-badge">REASON 7</div>
+              <h2>7. You Respond Better to Stress Management</h2>
+              <div><p><strong>Here's the test: your PCOS symptoms improve during vacations and get worse during stressful periods.</strong></p><p>Women with insulin PCOS don't see dramatic symptom changes based on stress levels. Women with adrenal PCOS do. Your hair grows faster during busy seasons. Your cycles get more irregular during work deadlines. Your weight fluctuates with your stress, not your diet.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="list-item-card">
+        <div class="list-item-inner">
+          <div class="list-item-flex zigzag-reverse">
+            <div class="list-item-image-wrap">
+                <img src="images/metformin-pcos-types-cortisol-truth-item-8.webp" alt="8. The Ashwagandha Question" loading="lazy" width="800" height="800">
+            </div>
+            <div class="list-item-text-wrap">
+              <div class="reason-badge">REASON 8</div>
+              <h2>8. The Ashwagandha Question</h2>
+              <div><p><strong>You've heard ashwagandha might raise testosterone. But the studies in women with PCOS show the opposite.</strong></p><p>A five-month study specifically in women with PCOS found ashwagandha reduced testosterone levels. The testosterone-raising effect comes from studies in men. Your PCOS community deserves the female-specific data, not the blanket warnings based on male research.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="list-item-card">
+        <div class="list-item-inner">
+          <div class="list-item-flex">
+            <div class="list-item-image-wrap">
+                <img src="images/metformin-pcos-types-cortisol-truth-item-9.webp" alt="9. You Need Cortisol Management, Not Insulin Sensitivity" loading="lazy" width="800" height="800">
+            </div>
+            <div class="list-item-text-wrap">
+              <div class="reason-badge">REASON 9</div>
+              <h2>9. You Need Cortisol Management, Not Insulin Sensitivity</h2>
+              <div><p><strong>If your PCOS is adrenal-driven, metformin is solving the wrong problem.</strong></p><p>You don't need insulin sensitivity ,  you need cortisol regulation. You don't need carb restriction ,  you need stress response support. KSM-66 Ashwagandha, magnesium glycinate, and L-theanine are studied for exactly this pathway. The HPA axis support that metformin can't provide.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  <div class="social-proof-section">
+    <h2>What Others Are Saying</h2>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"Two years on metformin with minimal results. Three months on FeelGood and my DHEA-S finally came down. Turns out my PCOS was never about insulin. Wish I&#x27;d known about adrenal PCOS sooner."</blockquote>
+      <div class="review-meta">
+        <span class="review-name">Priya K.</span>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"The 3 AM wake-ups stopped within two weeks. After 18 months of metformin doing nothing for my sleep, I finally understand why. My PCOS is stress-driven, not insulin-driven. Game changer."</blockquote>
+      <div class="review-meta">
+        <span class="review-name">Elena M.</span>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"My endocrinologist said my &#x27;normal&#x27; A1C meant metformin was working. But I still felt terrible. FeelGood addressed what metformin couldn&#x27;t ,  the cortisol pattern driving my symptoms."</blockquote>
+      <div class="review-meta">
+        <span class="review-name">Chloe R.</span>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"I spent thousands on PCOS treatments that barely helped. FeelGood was the first thing that made sense for my stress-triggered PCOS. Sleep improved first, then everything else followed."</blockquote>
+      <div class="review-meta">
+        <span class="review-name">Maya P.</span>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"Six months of metformin + low carb with no changes. Two months of FeelGood and my hair growth finally slowed down. Understanding adrenal vs insulin PCOS changed everything for me."</blockquote>
+      <div class="review-meta">
+        <span class="review-name">Sofia V.</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="final-cta">
+    <div class="cta-card-wrap">
+      <div class="cta-card-inner">
+        <div class="cta-card-flex">
+          <div class="cta-card-image">
+            <div class="product-img-container">
+              <img src="https://ftwqfgojkrkdpglneifn.supabase.co/storage/v1/object/public/generated-images/generated/e5b7fd8d-ebad-4727-97be-2c2b2c6a1133/0c235132-b5a3-4aa9-be62-1c1bb389259b.png" alt="Finally Address the Real Cause of Your PCOS" loading="lazy" width="400" height="400">
+            </div>
+          </div>
+          <div class="cta-card-content">
+            <h2>Finally Address the Real Cause of Your PCOS</h2>
+            <ul class="cta-benefits">
+              <li><span class="cta-check">&#10003;</span> KSM-66 Ashwagandha for cortisol support</li>
+              <li><span class="cta-check">&#10003;</span> Magnesium glycinate for sleep restoration</li>
+              <li><span class="cta-check">&#10003;</span> PCOS-informed formulation</li>
+              <li><span class="cta-check">&#10003;</span> 60-day money-back guarantee</li>
+            </ul>
+            <div class="cta-button-wrap">
+              <a href="https://elional.com/products/calming-drink-mix" class="cta-button">Check Availability</a>
+            </div>
+            <p class="cta-trust-line">60-Day Money-Back Guarantee · Made in UAE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details>
+        <summary>How do I know if I have insulin PCOS or adrenal PCOS?</summary>
+        <div class="faq-answer">The key markers are DHEA-S levels (elevated in adrenal PCOS), symptom timing (adrenal often starts with stress), and sleep patterns (adrenal PCOS includes 3 AM wake-ups). Your doctor can test DHEA-S, 4-point cortisol saliva test, and 17-hydroxyprogesterone to clarify your type.</div>
+      </details>
+      <details>
+        <summary>Can I take FeelGood with metformin?</summary>
+        <div class="faq-answer">Yes, FeelGood addresses cortisol regulation while metformin works on insulin sensitivity. If you have mixed PCOS (both insulin and adrenal components), addressing both pathways can be beneficial. Always consult your healthcare provider about supplement combinations.</div>
+      </details>
+      <details>
+        <summary>Will ashwagandha make my PCOS testosterone worse?</summary>
+        <div class="faq-answer">The research in women with PCOS shows the opposite. A five-month study found ashwagandha reduced testosterone in women with PCOS. The testosterone-raising studies were conducted in men. KSM-66 in FeelGood is studied specifically for cortisol support without testosterone elevation in women.</div>
+      </details>
+      <details>
+        <summary>How long before I see changes with adrenal PCOS?</summary>
+        <div class="faq-answer">Sleep typically improves first (1-2 weeks). Cortisol rhythm stabilizes over 4-6 weeks. Hair growth and cycle changes take 8-12 weeks because you&#x27;re addressing the upstream cause. It&#x27;s slower than insulin-based interventions but more sustainable.</div>
+      </details>
+      <details>
+        <summary>Why didn&#x27;t my doctor tell me about adrenal PCOS?</summary>
+        <div class="faq-answer">Most medical training focuses on insulin-driven PCOS because it&#x27;s more common (67% vs 33%). Adrenal PCOS requires different testing and treatment approaches that aren&#x27;t part of standard protocols. Many endocrinologists are only now learning to distinguish the types.</div>
+      </details>
+    </div>
+  </div>
+
+  <div class="guarantee-block">
+    <div class="guarantee-inner">
+      <div class="guarantee-image">
+        <img src="images/metformin-pcos-types-cortisol-truth-guarantee.webp" alt="60-Day Money-Back Guarantee" loading="lazy">
+      </div>
+      <h2>60-Day Money-Back Guarantee</h2>
+      <p>Try FeelGood risk-free for 60 days. If you don&#x27;t notice improved sleep and stress response within the first month, contact our support team for a full refund. No forms, no questions.</p>
+    </div>
+  </div>
+  <div class="trust-row">
+    <div class="trust-row-inner">
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span>Money-Back<br>Guarantee</span>
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <span>Free<br>Shipping</span>
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span>Secure<br>Checkout</span>
+      </div>
+      <div class="trust-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span>Verified<br>Reviews</span>
+      </div>
+    </div>
+  </div>
+  <div id="sticky-cta">
+    <a href="https://elional.com/products/calming-drink-mix" class="cta-button">Check Availability</a>
+  </div>
+  <script>
+    (function(){
+      var trigger = 0.4;
+      var el = document.getElementById('sticky-cta');
+      var lastScrollY = 0;
+      var isVisible = false;
+      window.addEventListener('scroll', function(){
+        var scrollPct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+        if (scrollPct >= trigger && !isVisible) {
+          el.style.display = 'flex';
+          el.classList.remove('hidden');
+          isVisible = true;
+        } else if (scrollPct < trigger && isVisible) {
+          el.classList.add('hidden');
+          setTimeout(function(){ if (el.classList.contains('hidden')) { el.style.display = 'none'; isVisible = false; } }, 300);
+        }
+        lastScrollY = window.scrollY;
+      }, { passive: true });
+    })();
+  </script></body>
+</html>
