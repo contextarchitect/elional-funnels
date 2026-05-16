@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Signs Your Morning Heaviness Is Actually Cortisol (Not Water Weight)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #6DBAE8;
+      --color-secondary: #D4724A;
+      --color-accent: #D4724A;
+      --color-cta: #6DBAE8;
+      --color-cta-text: #ffffff;
+      --color-cta-hover: #6DBAE8;
+      --color-background: #ffffff;
+      --color-text: #1a1a2e;
+      --color-text-secondary: #6c757d;
+      --color-border: #dee2e6;
+      --color-section-alt: #f8f9fa;
+      --font-heading: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --heading-weight: 700;
+      --body-weight: 400;
+      --body-size: 16px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); font-size: var(--body-size); font-weight: var(--body-weight); line-height: 1.7; color: var(--color-text); background: var(--color-background); -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; height: auto; display: block; }
+    .v2-navbar { background: #111; color: #fff; padding: 16px 24px; }
+    .v2-navbar-inner { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 2px; }
+    .v2-navbar-title { font-family: var(--font-heading); font-weight: 700; font-size: 1.25em; letter-spacing: -0.01em; }
+    .v2-navbar-byline { font-size: 0.8em; opacity: 0.6; font-weight: 300; letter-spacing: 0.02em; }
+    .v2-hero { background: var(--color-section-alt); padding: 24px 16px 32px; }
+    @media (min-width: 640px) { .v2-hero { padding: 48px 24px 56px; } }
+    .v2-hero-inner { max-width: 800px; margin: 0 auto; }
+    .v2-hero-badges { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+    .v2-badge-trending { background: #ef4444; color: #fff; font-size: 0.65em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 3px 8px; border-radius: 3px; }
+    .v2-badge-tagline { font-size: 0.85em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; color: var(--color-text); }
+    .v2-hero-headline { font-family: var(--font-heading); font-size: clamp(1.6rem, 4.5vw, 3rem); line-height: 1.2; color: var(--color-text); margin-bottom: 24px; }
+    .v2-hero-headline em { font-style: normal; font-weight: 400; }
+    .v2-hero-headline strong { font-weight: 700; }
+    .v2-author-block { display: flex; flex-direction: column; gap: 12px; }
+    .v2-author-row { display: flex; align-items: center; gap: 12px; }
+    .v2-author-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(0,0,0,0.1); }
+    .v2-author-avatar-placeholder { width: 48px; height: 48px; border-radius: 50%; background: var(--color-border); }
+    .v2-author-name { font-size: 0.95em; color: var(--color-text); }
+    .v2-author-meta { font-size: 0.8em; color: var(--color-text-secondary); }
+    .v2-engagement { display: flex; align-items: center; gap: 16px; font-size: 0.8em; color: var(--color-text-secondary); }
+    .v2-eng-item { display: flex; align-items: center; gap: 4px; }
+    .v2-eng-icon { width: 14px; height: 14px; }
+    .v2-summary { max-width: 800px; margin: 0 auto; padding: 24px 16px 8px; }
+    @media (min-width: 640px) { .v2-summary { padding: 40px 24px 16px; } }
+    .v2-summary-inner { border-left: 4px solid var(--color-primary); padding-left: 20px; padding-top: 8px; padding-bottom: 8px; }
+    .v2-summary-inner p { color: var(--color-text-secondary); font-size: 1em; line-height: 1.7; margin-bottom: 12px; }
+    @media (min-width: 640px) { .v2-summary-inner p { font-size: 1.1em; } }
+    .v2-summary-inner p:last-child { margin-bottom: 0; }
+    .v2-reason-wrap { max-width: 800px; margin: 0 auto; padding: 0 16px; }
+    @media (min-width: 640px) { .v2-reason-wrap { padding: 0 24px; } }
+    .v2-reason { padding: 20px 0 24px; border-top: 1px solid var(--color-border); }
+    .v2-reason.v2-highlighted { margin: 0 -16px; padding: 20px 16px 24px; border-top: none; background: var(--color-section-alt); }
+    @media (min-width: 640px) { .v2-reason { padding: 40px 0 48px; } .v2-reason.v2-highlighted { margin: 0 -24px; padding: 40px 24px 48px; } }
+    .v2-reason-grid { display: grid; grid-template-columns: 1fr; gap: 20px; align-items: start; }
+    @media (min-width: 1024px) { .v2-reason-grid.has-image { grid-template-columns: 1fr 1fr; gap: 40px; } .v2-reason-grid.v2-reverse .v2-reason-image { order: 2; } .v2-reason-grid.v2-reverse .v2-reason-content { order: 1; } }
+    .v2-reason-image img { width: 100%; border-radius: 8px; object-fit: cover; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .v2-reason-title { font-family: var(--font-heading); font-weight: var(--heading-weight); font-size: 1.3em; line-height: 1.3; margin-bottom: 16px; color: var(--color-text); }
+    @media (min-width: 640px) { .v2-reason-title { font-size: 1.6em; } }
+    .v2-reason-number { color: var(--color-primary); }
+    .v2-reason-body p { color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 12px; }
+    .v2-reason-body p:last-child { margin-bottom: 0; }
+    .v2-reason-blockquote { border-left: 4px solid var(--color-primary); padding: 8px 0 8px 16px; margin-top: 12px; }
+    .v2-reason-blockquote p { font-style: italic; color: var(--color-text-secondary); }
+    .v2-reason-blockquote .v2-bq-attr { font-style: normal; font-weight: 600; color: var(--color-text); margin-top: 8px; }
+    .v2-checklist-box { background: color-mix(in srgb, var(--color-primary) 6%, white); border-radius: 12px; padding: 20px; margin-top: 16px; }
+    .v2-checklist-box-title { font-weight: 600; color: var(--color-primary); font-size: 0.95em; margin-bottom: 12px; }
+    .v2-checklist-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 8px; }
+    .v2-checklist-item:last-child { margin-bottom: 0; }
+    .v2-checklist-item .v2-check { font-size: 1.1em; flex-shrink: 0; }
+    .v2-checklist-item p { font-size: 0.95em; color: var(--color-text); }
+    .v2-bullet-list { margin-top: 16px; }
+    .v2-bullet-item { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+    .v2-bullet-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--color-primary); flex-shrink: 0; }
+    .v2-bullet-item span { font-size: 0.95em; }
+    .v2-emoji-features { margin-top: 16px; }
+    .v2-emoji-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+    .v2-emoji-row:last-child { margin-bottom: 0; }
+    .v2-emoji-icon { font-size: 1.5em; flex-shrink: 0; }
+    .v2-emoji-label { font-weight: 600; margin-bottom: 2px; }
+    .v2-emoji-desc { font-size: 0.9em; color: var(--color-text-secondary); }
+    .v2-timeline { margin-top: 20px; }
+    .v2-timeline-step { position: relative; padding-left: 32px; margin-bottom: 20px; }
+    .v2-timeline-step:last-child { margin-bottom: 0; }
+    .v2-timeline-dot { position: absolute; left: 0; top: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--color-primary); color: #fff; font-size: 0.65em; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .v2-timeline-card { background: color-mix(in srgb, var(--color-primary) 5%, white); border: 1px solid color-mix(in srgb, var(--color-primary) 10%, white); border-radius: 12px; padding: 12px 20px; }
+    .v2-timeline-step:last-child .v2-timeline-card { background: color-mix(in srgb, var(--color-primary) 10%, white); border-color: color-mix(in srgb, var(--color-primary) 20%, white); }
+    .v2-timeline-title { font-weight: 700; font-size: 1.05em; color: var(--color-primary); margin-bottom: 4px; }
+    .v2-timeline-subtitle { font-size: 0.85em; color: var(--color-text); margin-bottom: 8px; }
+    .v2-timeline-items { list-style: none; }
+    .v2-timeline-items li { display: flex; align-items: center; gap: 8px; font-size: 0.85em; color: var(--color-text-secondary); margin-bottom: 4px; }
+    .v2-timeline-items li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--color-primary); flex-shrink: 0; }
+    .v2-timeline-footer { margin-top: 12px; padding-top: 12px; border-top: 1px solid color-mix(in srgb, var(--color-primary) 10%, white); font-size: 0.85em; font-weight: 600; color: var(--color-primary); }
+    .v2-inline-cta { display: flex; flex-direction: column; align-items: center; padding: 16px 16px 24px; max-width: 800px; margin: 0 auto; border-top: 1px solid var(--color-border); }
+    @media (min-width: 640px) { .v2-inline-cta { padding: 24px 24px 32px; } }
+    .v2-cta-button { display: inline-flex; align-items: center; gap: 8px; background: var(--color-cta); color: var(--color-cta-text); padding: 16px 40px; border-radius: 8px; text-decoration: none; font-size: 1.1em; font-weight: 700; font-family: var(--font-body); transition: transform 0.15s, box-shadow 0.15s; box-shadow: 0 8px 24px -6px color-mix(in srgb, var(--color-primary) 40%, transparent); width: 100%; max-width: 420px; justify-content: center; text-align: center; }
+    .v2-cta-button:hover { transform: translateY(-2px); box-shadow: 0 12px 32px -6px color-mix(in srgb, var(--color-primary) 50%, transparent); }
+    .v2-cta-arrow { font-size: 1.1em; }
+    .v2-micro-proof { margin-top: 8px; font-size: 0.85em; color: var(--color-text-secondary); font-style: italic; text-align: center; max-width: 380px; }
+    .v2-social-embed { max-width: 800px; margin: 0 auto; padding: 24px 16px 32px; display: flex; flex-direction: column; align-items: center; gap: 12px; border-top: 1px solid var(--color-border); }
+    .v2-social-embed-intro { font-size: 0.85em; font-style: italic; color: var(--color-text-secondary); text-align: center; }
+    .v2-social-embed img { border-radius: 8px; max-width: 480px; width: 100%; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .v2-final-cta-wrap { padding: 32px 16px 40px; position: relative; overflow: hidden; }
+    @media (min-width: 640px) { .v2-final-cta-wrap { padding: 64px 24px 80px; } }
+    .v2-final-cta-bg { position: absolute; inset: 0; background: linear-gradient(135deg, var(--color-section-alt) 0%, color-mix(in srgb, var(--color-primary) 12%, white) 50%, var(--color-section-alt) 100%); z-index: 0; }
+    .v2-final-cta-glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; border-radius: 50%; background: color-mix(in srgb, var(--color-primary) 15%, transparent); filter: blur(120px); z-index: 0; }
+    .v2-final-cta-card { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; background: rgba(255,255,255,0.92); backdrop-filter: blur(8px); border-radius: 20px; border: 1px solid color-mix(in srgb, var(--color-primary) 20%, transparent); padding: 24px; box-shadow: 0 20px 60px -15px color-mix(in srgb, var(--color-primary) 30%, transparent); }
+    @media (min-width: 640px) { .v2-final-cta-card { padding: 40px 48px; } }
+    .v2-final-cta-header { text-align: center; margin-bottom: 24px; }
+    .v2-final-cta-header h2 { font-family: var(--font-heading); font-weight: var(--heading-weight); font-size: clamp(1.3em, 3vw, 2em); color: var(--color-text); }
+    .v2-final-cta-header p { color: var(--color-text-secondary); font-size: 1em; margin-top: 8px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .v2-final-product-img { display: flex; justify-content: center; margin-bottom: 24px; }
+    .v2-final-product-img img { width: 100%; max-width: 360px; border-radius: 16px; aspect-ratio: 1; object-fit: cover; box-shadow: 0 20px 60px -15px color-mix(in srgb, var(--color-primary) 30%, transparent); }
+    .v2-benefits-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 28px; }
+    @media (min-width: 640px) { .v2-benefits-grid { grid-template-columns: 1fr 1fr; gap: 20px; } }
+    .v2-benefit-item { display: flex; gap: 12px; align-items: flex-start; }
+    .v2-benefit-icon { width: 40px; height: 40px; border-radius: 50%; background: color-mix(in srgb, var(--color-primary) 10%, white); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .v2-benefit-icon svg { width: 20px; height: 20px; color: var(--color-primary); }
+    .v2-benefit-title { font-weight: 600; font-size: 0.95em; margin-bottom: 2px; }
+    .v2-benefit-desc { font-size: 0.85em; color: var(--color-text-secondary); }
+    .v2-final-cta-action { text-align: center; }
+    .v2-final-cta-action .v2-cta-button { font-size: 1.25em; padding: 18px 48px; }
+    @media (min-width: 640px) { .v2-final-cta-action .v2-cta-button { width: auto; } }
+    .v2-trust-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 16px; font-size: 0.85em; color: var(--color-text-secondary); }
+    .v2-trust-badge { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+    .v2-trust-badge svg { width: 16px; height: 16px; color: var(--color-primary); }
+    .v2-voting { max-width: 640px; margin: 0 auto; padding: 32px 16px 40px; }
+    @media (min-width: 640px) { .v2-voting { padding: 48px 24px 56px; } }
+    .v2-voting h2 { font-family: var(--font-heading); font-weight: var(--heading-weight); text-align: center; font-size: 1.4em; margin-bottom: 8px; }
+    .v2-voting > p { text-align: center; color: var(--color-text-secondary); font-size: 0.95em; margin-bottom: 24px; }
+    .v2-vote-card { background: var(--color-background); border: 1px solid var(--color-border); border-radius: 12px; padding: 16px 20px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+    .v2-vote-label { font-weight: 500; margin-bottom: 12px; font-size: 0.95em; }
+    .v2-vote-buttons { display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px; margin-bottom: 12px; }
+    .v2-vote-btn { aspect-ratio: 1; border-radius: 6px; border: none; font-size: 0.75em; font-weight: 600; cursor: pointer; background: var(--color-section-alt); color: var(--color-text); transition: background 0.15s, transform 0.1s; }
+    .v2-vote-btn:hover:not(:disabled) { background: color-mix(in srgb, var(--color-primary) 15%, white); transform: scale(1.05); }
+    .v2-vote-btn.voted { background: var(--color-primary); color: #fff; transform: scale(1.1); box-shadow: 0 2px 8px color-mix(in srgb, var(--color-primary) 40%, transparent); }
+    .v2-vote-btn:disabled { opacity: 0.5; cursor: default; }
+    .v2-vote-result { display: flex; justify-content: space-between; font-size: 0.8em; color: var(--color-text-secondary); margin-bottom: 6px; }
+    .v2-vote-score { font-weight: 600; color: var(--color-primary); }
+    .v2-vote-bar { height: 10px; background: var(--color-section-alt); border-radius: 999px; overflow: hidden; }
+    .v2-vote-bar-fill { height: 100%; background: var(--color-primary); border-radius: 999px; transition: width 0.5s ease; }
+    .v2-comments { max-width: 640px; margin: 0 auto; padding: 32px 16px 40px; border-top: 1px solid var(--color-border); }
+    .v2-comments h2 { font-family: var(--font-heading); font-weight: var(--heading-weight); font-size: 1.3em; margin-bottom: 20px; }
+    .v2-comment-card { padding: 16px 0; border-bottom: 1px solid var(--color-border); }
+    .v2-comment-card:last-child { border-bottom: none; }
+    .v2-comment-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .v2-comment-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--color-section-alt); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.8em; color: var(--color-text-secondary); flex-shrink: 0; }
+    .v2-comment-name { font-weight: 600; font-size: 0.9em; }
+    .v2-comment-time { font-size: 0.75em; color: var(--color-text-secondary); }
+    .v2-comment-text { font-size: 0.9em; color: var(--color-text); line-height: 1.6; margin-bottom: 8px; }
+    .v2-comment-actions { display: flex; gap: 16px; font-size: 0.8em; color: var(--color-text-secondary); }
+    .v2-comment-actions span { cursor: pointer; }
+    .v2-comment-actions span:hover { color: var(--color-primary); }
+    .v2-reply { margin-left: 48px; padding: 12px 0; border-top: 1px solid var(--color-border); }
+    .v2-reviews { max-width: 640px; margin: 0 auto; padding: 32px 16px; }
+    .v2-reviews h2 { font-family: var(--font-heading); font-weight: var(--heading-weight); text-align: center; font-size: 1.3em; margin-bottom: 20px; }
+    .v2-review-card { background: var(--color-background); border: 1px solid var(--color-border); border-radius: 12px; padding: 20px; margin-bottom: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+    .v2-review-stars { color: var(--color-accent); font-size: 1.1em; margin-bottom: 8px; }
+    .v2-review-card blockquote { color: var(--color-text); line-height: 1.6; margin: 0 0 12px; font-style: normal; }
+    .v2-review-meta { display: flex; align-items: center; gap: 8px; }
+    .v2-review-name { color: var(--color-text-secondary); font-weight: 700; font-size: 0.9em; }
+    .v2-verified { color: var(--color-accent); font-size: 0.75em; display: flex; align-items: center; gap: 4px; }
+    .v2-guarantee { max-width: 640px; margin: 0 auto; padding: 0 16px 32px; }
+    .v2-guarantee-inner { background: var(--color-section-alt); border-radius: 12px; padding: 28px; text-align: center; overflow: hidden; }
+    .v2-guarantee-img { margin: -28px -28px 20px; }
+    .v2-guarantee-img img { width: 100%; display: block; }
+    .v2-guarantee-inner h3 { font-family: var(--font-heading); font-weight: var(--heading-weight); color: var(--color-primary); font-size: 1.2em; margin-bottom: 12px; }
+    .v2-guarantee-inner p { color: var(--color-text-secondary); line-height: 1.7; max-width: 500px; margin: 0 auto; }
+    .v2-footer { padding: 24px 16px; border-top: 1px solid var(--color-border); text-align: center; font-size: 0.8em; color: var(--color-text-secondary); }
+    #sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--color-background); border-top: 1px solid var(--color-border); padding: 12px 20px; z-index: 1000; box-shadow: 0 -2px 10px rgba(0,0,0,0.08); justify-content: center; align-items: center; transition: transform 0.3s ease; }
+    #sticky-cta.hidden { transform: translateY(100%); }
+    #sticky-cta a.v2-cta-button { max-width: 320px; width: 100%; min-height: 52px; padding: 14px 32px; font-size: 1em; }
+    body.has-sticky-cta { padding-bottom: 80px; }
+  </style>
+
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','609440038669378');fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=609440038669378&ev=PageView&noscript=1"/></noscript>
+  <script>
+    (function(){var p=new URLSearchParams(location.search),u={};['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(k){var v=p.get(k);if(v)u[k]=v});if(!Object.keys(u).length)return;function tag(root){root.querySelectorAll('a[href]').forEach(function(a){try{var url=new URL(a.href);Object.keys(u).forEach(function(k){url.searchParams.set(k,u[k])});a.href=url.toString()}catch(e){}});}document.addEventListener('DOMContentLoaded',function(){tag(document);new MutationObserver(function(m){m.forEach(function(r){r.addedNodes.forEach(function(n){if(n.nodeType===1)tag(n)})})}).observe(document.body,{childList:true,subtree:true})})})();
+  </script>
+  
+  <script>
+  (function(){
+    var ep='https://ftwqfgojkrkdpglneifn.supabase.co/functions/v1/funnel-analytics';
+    var did='morning-heaviness-cortisol-signs';var ps=new URLSearchParams(location.search);
+    function send(t,d){try{navigator.sendBeacon(ep,JSON.stringify(Object.assign({deployment_id:did,event_type:t,utm_source:ps.get('utm_source')||'',utm_medium:ps.get('utm_medium')||'',utm_campaign:ps.get('utm_campaign')||''},d||{})));}catch(e){}}
+    send('page_view');
+    document.addEventListener('click',function(e){var b=e.target.closest('.v2-cta-button,[data-cta]');if(b){var p=b.closest('#sticky-cta')?'sticky':b.closest('.v2-final-cta-wrap')?'final':b.closest('.v2-inline-cta')?'inline':'other';send('cta_click',{cta_position:p});}});
+  })();
+  </script>
+  
+</head>
+<body data-deployment-id="morning-heaviness-cortisol-signs">
+
+  <nav class="v2-navbar">
+    <div class="v2-navbar-inner">
+      <span class="v2-navbar-title">Women&#x27;s Health Science</span>
+      <span class="v2-navbar-byline">by Dr. Priya Raghavan</span>
+    </div>
+  </nav>
+  <section class="v2-hero">
+    <div class="v2-hero-inner">
+      <div class="v2-hero-badges">
+        <span class="v2-badge-trending">Trending</span>
+        <span class="v2-badge-tagline">THE HIDDEN CAUSE OF MORNING HEAVINESS NOBODY TALKS ABOUT</span>
+      </div>
+  
+      <h1 class="v2-hero-headline">7 Signs Your Morning Heaviness Is Actually Cortisol (Not Water Weight)</h1>
+  
+      <div class="v2-author-block">
+        <div class="v2-author-row">
+          <img src="https://raw.githubusercontent.com/contextarchitect/brand-assets/main/thumbnails/1776096889086-6dmhwsws5t.png" alt="Dr. Priya Raghavan" class="v2-author-avatar">
+          <div class="v2-author-info">
+            <p class="v2-author-name">By <strong>Dr. Priya Raghavan</strong></p>
+            <p class="v2-author-meta">Endocrinology Researcher &middot; Last Updated <span id="v2-date"></span></p>
+          </div>
+        </div>
+  
+        <div class="v2-engagement">
+          <span class="v2-eng-item">
+            <svg class="v2-eng-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            <span id="v2-view-counter" data-base="347000">347000</span>
+          </span>
+          <span class="v2-eng-item">
+            <svg class="v2-eng-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            72k
+          </span>
+          <span class="v2-eng-item">
+            <svg class="v2-eng-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            18k
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="v2-reason-wrap">
+    <div class="v2-reason v2-highlighted">
+      <div class="v2-reason-grid has-image">
+        <div class="v2-reason-image">
+          <img src="images/morning-heaviness-cortisol-signs-item-1.webp" alt="1. You Look Puffy Before You Even Get Out of Bed" loading="lazy" width="800" height="800">
+        </div>
+        <div class="v2-reason-content">
+          <h2 class="v2-reason-title"><span class="v2-reason-number">1.</span> You Look Puffy Before You Even Get Out of Bed</h2>
+          <div class="v2-reason-body"><p>Real water retention happens gradually throughout the day. You wake up lean, then puffiness increases by evening.</p><p>Cortisol-driven morning heaviness is the opposite. You open your eyes and immediately feel thick, swollen, like your face doesn't fit. This happens because elevated nighttime cortisol prevents your body from completing its overnight inflammatory reset.</p></div>
+          <div class="v2-bullet-list">
+            <div class="v2-bullet-item"><div class="v2-bullet-dot"></div><span>Face feels tight and swollen upon waking</span></div><div class="v2-bullet-item"><div class="v2-bullet-dot"></div><span>Rings are tighter in the morning than at night</span></div><div class="v2-bullet-item"><div class="v2-bullet-dot"></div><span>Eyes look puffy before any fluid intake</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="v2-inline-cta">
+    <a href="https://elional.com/products/calming-drink-mix" class="v2-cta-button">Learn More <span class="v2-cta-arrow">&rarr;</span></a>
+    <p class="v2-micro-proof">⏰ 89% notice changes within 2 weeks</p>
+  </div>
+  <div class="v2-reason-wrap">
+    <div class="v2-reason">
+      <div class="v2-reason-grid has-image v2-reverse">
+        <div class="v2-reason-image">
+          <img src="images/morning-heaviness-cortisol-signs-item-2.webp" alt="2. You Sleep 8 Hours But Still Wake Up Feeling Heavy" loading="lazy" width="800" height="800">
+        </div>
+        <div class="v2-reason-content">
+          <h2 class="v2-reason-title"><span class="v2-reason-number">2.</span> You Sleep 8 Hours But Still Wake Up Feeling Heavy</h2>
+          <div class="v2-reason-body"><p>Here's what your doctor doesn't tell you: sleep duration isn't the same as cortisol recovery.</p><p>During healthy sleep, cortisol should drop to its lowest levels, allowing inflammation to resolve and your lymphatic system to clear overnight fluid buildup. But stress keeps cortisol elevated even during sleep, blocking this natural reset process.</p></div>
+          <div class="v2-timeline">
+            <div class="v2-timeline-step">
+              <div class="v2-timeline-dot">1</div>
+              <div class="v2-timeline-card">
+                <p class="v2-timeline-title">10 PM - 2 AM</p>
+                <p class="v2-timeline-subtitle">Normal cortisol pattern</p>
+                <ul class="v2-timeline-items"><li>Cortisol drops to lowest levels</li><li>Inflammation begins to resolve</li><li>Lymphatic drainage activates</li></ul>
+                <p class="v2-timeline-footer">This is what should happen</p>
+              </div>
+            </div>
+            <div class="v2-timeline-step">
+              <div class="v2-timeline-dot">2</div>
+              <div class="v2-timeline-card">
+                <p class="v2-timeline-title">2 AM - 6 AM</p>
+                <p class="v2-timeline-subtitle">Cortisol dysregulation</p>
+                <ul class="v2-timeline-items"><li>Cortisol spikes inappropriately</li><li>Inflammatory reset interrupted</li><li>Fluid retention persists</li></ul>
+                <p class="v2-timeline-footer">Why you wake up heavy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="v2-inline-cta">
+    <a href="https://elional.com/products/calming-drink-mix" class="v2-cta-button">See the Science <span class="v2-cta-arrow">&rarr;</span></a>
+    <p class="v2-micro-proof">📊 Clinical studies show cortisol disrupts sleep recovery</p>
+  </div>
+  <div class="v2-reason-wrap">
+    <div class="v2-reason v2-highlighted">
+      <div class="v2-reason-grid has-image">
+        <div class="v2-reason-image">
+          <img src="images/morning-heaviness-cortisol-signs-item-3.webp" alt="3. The 3 AM Cortisol Spike Leaves You Thick by Morning" loading="lazy" width="800" height="800">
+        </div>
+        <div class="v2-reason-content">
+          <h2 class="v2-reason-title"><span class="v2-reason-number">3.</span> The 3 AM Cortisol Spike Leaves You Thick by Morning</h2>
+          <div class="v2-reason-body"><p>Most women know about the 3 AM wake-up. What they don't realize is this cortisol surge doesn't just disrupt sleep, it triggers inflammation that makes you wake up feeling swollen.</p><p>This inappropriate cortisol spike activates your stress response when your body should be in deep repair mode, leading to fluid retention and that characteristic morning heaviness.</p></div>
+          <div class="v2-emoji-features">
+            <div class="v2-emoji-row"><span class="v2-emoji-icon">⏰</span><div><p class="v2-emoji-label">3 AM Cortisol Surge</p><p class="v2-emoji-desc">Stress hormone spikes when it should be at lowest point</p></div></div><div class="v2-emoji-row"><span class="v2-emoji-icon">🔥</span><div><p class="v2-emoji-label">Inflammatory Response</p><p class="v2-emoji-desc">Body activates inflammation pathways instead of repair</p></div></div><div class="v2-emoji-row"><span class="v2-emoji-icon">💧</span><div><p class="v2-emoji-label">Fluid Retention</p><p class="v2-emoji-desc">Disrupted drainage leads to morning puffiness and heaviness</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="v2-inline-cta">
+    <a href="https://elional.com/products/calming-drink-mix" class="v2-cta-button">Fix This Now <span class="v2-cta-arrow">&rarr;</span></a>
+    <p class="v2-micro-proof">🌙 Most women see 3 AM wake-ups improve first</p>
+  </div>
+  <div class="v2-reason-wrap">
+    <div class="v2-reason">
+      <div class="v2-reason-grid has-image v2-reverse">
+        <div class="v2-reason-image">
+          <img src="images/morning-heaviness-cortisol-signs-item-4.webp" alt="4. Exercise Makes Your Morning Puffiness Worse" loading="lazy" width="800" height="800">
+        </div>
+        <div class="v2-reason-content">
+          <h2 class="v2-reason-title"><span class="v2-reason-number">4.</span> Exercise Makes Your Morning Puffiness Worse</h2>
+          <div class="v2-reason-body"><p>If morning heaviness were just water retention, exercise would help. But when it's cortisol-driven, working out can actually make you look and feel more swollen the next day.</p><p>This happens because elevated baseline cortisol means exercise becomes an additional stressor instead of a reset tool. Your body can't recover properly, leading to increased inflammation and fluid retention.</p></div>
+          <div class="v2-reason-blockquote">
+            <p>When cortisol is already elevated, exercise becomes a stressor rather than a stress reliever. The body needs cortisol regulation before it can properly benefit from physical activity.</p>
+            <p class="v2-bq-attr">Dr. Sarah Gottfried, Harvard-trained physician and hormone researcher</p>
+          </div>
+          <div class="v2-checklist-box">
+            <p class="v2-checklist-box-title">Signs Exercise Is Adding to Cortisol Load</p>
+            <div class="v2-checklist-item"><span class="v2-check">&#10003;</span><p>Feel more puffy after workout days</p></div><div class="v2-checklist-item"><span class="v2-check">&#10003;</span><p>Take longer to recover between sessions</p></div><div class="v2-checklist-item"><span class="v2-check">&#10003;</span><p>Morning heaviness worse after evening exercise</p></div><div class="v2-checklist-item"><span class="v2-check">&#10003;</span><p>Feel wired but tired after workouts</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="v2-inline-cta">
+    <a href="https://elional.com/products/calming-drink-mix" class="v2-cta-button">Understand Why <span class="v2-cta-arrow">&rarr;</span></a>
+    <p class="v2-micro-proof">💪 Exercise tolerance improves with cortisol support</p>
+  </div>
+  <div class="v2-reason-wrap">
+    <div class="v2-reason">
+      <div class="v2-reason-grid has-image">
+        <div class="v2-reason-image">
+          <img src="images/morning-heaviness-cortisol-signs-item-5.webp" alt="5. Your Labs Are &#x27;Normal&#x27; But Your Body Feels Anything But" loading="lazy" width="800" height="800">
+        </div>
+        <div class="v2-reason-content">
+          <h2 class="v2-reason-title"><span class="v2-reason-number">5.</span> Your Labs Are &#x27;Normal&#x27; But Your Body Feels Anything But</h2>
+          <div class="v2-reason-body"><p>Standard cortisol tests measure single-point levels, usually in the morning. They miss the rhythm disruption that causes nighttime cortisol elevation and morning heaviness.</p><p>Your 8 AM cortisol might test normal, but if it's spiking at 3 AM and staying elevated through sleep, you'll wake up feeling thick and swollen despite 'normal' results.</p></div>
+          <div class="v2-bullet-list">
+            <div class="v2-bullet-item"><div class="v2-bullet-dot"></div><span>Standard tests miss nighttime cortisol spikes</span></div><div class="v2-bullet-item"><div class="v2-bullet-dot"></div><span>Rhythm disruption more important than single levels</span></div><div class="v2-bullet-item"><div class="v2-bullet-dot"></div><span>Morning heaviness happens despite &#x27;normal&#x27; lab values</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="v2-inline-cta">
+    <a href="https://elional.com/products/calming-drink-mix" class="v2-cta-button">Get Answers <span class="v2-cta-arrow">&rarr;</span></a>
+    <p class="v2-micro-proof">📋 73% of women were told their labs were normal</p>
+  </div>
+  <div class="v2-reason-wrap">
+    <div class="v2-reason v2-highlighted">
+      <div class="v2-reason-grid has-image v2-reverse">
+        <div class="v2-reason-image">
+          <img src="images/morning-heaviness-cortisol-signs-item-6.webp" alt="6. Perimenopause Makes Your Cortisol Rhythm Go Haywire" loading="lazy" width="800" height="800">
+        </div>
+        <div class="v2-reason-content">
+          <h2 class="v2-reason-title"><span class="v2-reason-number">6.</span> Perimenopause Makes Your Cortisol Rhythm Go Haywire</h2>
+          <div class="v2-reason-body"><p>Declining estrogen doesn't just cause hot flashes, it destabilizes your HPA axis, the system that controls cortisol timing. This is why morning heaviness often starts during perimenopause even if you've never had it before.</p><p>Estrogen helps maintain healthy cortisol rhythms. As levels fluctuate and decline, cortisol regulation becomes erratic, leading to inappropriate nighttime elevation and morning inflammation.</p></div>
+          <div class="v2-timeline">
+            <div class="v2-timeline-step">
+              <div class="v2-timeline-dot">1</div>
+              <div class="v2-timeline-card">
+                <p class="v2-timeline-title">Pre-Perimenopause</p>
+                <p class="v2-timeline-subtitle">Stable estrogen</p>
+                <ul class="v2-timeline-items"><li>Consistent cortisol rhythm</li><li>Proper overnight recovery</li><li>Wake up refreshed</li></ul>
+                <p class="v2-timeline-footer">How it used to work</p>
+              </div>
+            </div>
+            <div class="v2-timeline-step">
+              <div class="v2-timeline-dot">2</div>
+              <div class="v2-timeline-card">
+                <p class="v2-timeline-title">Perimenopause</p>
+                <p class="v2-timeline-subtitle">Declining estrogen</p>
+                <ul class="v2-timeline-items"><li>Erratic cortisol patterns</li><li>Disrupted sleep recovery</li><li>Morning heaviness appears</li></ul>
+                <p class="v2-timeline-footer">Why it changed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="v2-inline-cta">
+    <a href="https://elional.com/products/calming-drink-mix" class="v2-cta-button">Learn the Fix <span class="v2-cta-arrow">&rarr;</span></a>
+    <p class="v2-micro-proof">🌸 Specifically studied in perimenopausal women</p>
+  </div>
+  <div class="v2-reason-wrap">
+    <div class="v2-reason">
+      <div class="v2-reason-grid has-image">
+        <div class="v2-reason-image">
+          <img src="images/morning-heaviness-cortisol-signs-item-7.webp" alt="7. The Right Cortisol Support Changes Everything" loading="lazy" width="800" height="800">
+        </div>
+        <div class="v2-reason-content">
+          <h2 class="v2-reason-title"><span class="v2-reason-number">7.</span> The Right Cortisol Support Changes Everything</h2>
+          <div class="v2-reason-body"><p>When you address the actual cause, cortisol rhythm disruption, morning heaviness typically improves within 2-3 weeks. Not because you're losing water weight, but because your body can finally complete its overnight reset.</p><p>FeelGood contains KSM-66 Ashwagandha at 300mg, magnesium glycinate at 100mg, and L-theanine at 400mg, clinical doses studied specifically for cortisol rhythm support and sleep quality in women like you.</p></div>
+          <div class="v2-checklist-box">
+            <p class="v2-checklist-box-title">What Changes When Cortisol Rhythm Normalizes</p>
+            <div class="v2-checklist-item"><span class="v2-check">&#10003;</span><p>Wake up with a defined face, not puffy</p></div><div class="v2-checklist-item"><span class="v2-check">&#10003;</span><p>Feel lighter and less thick in the morning</p></div><div class="v2-checklist-item"><span class="v2-check">&#10003;</span><p>Sleep becomes actually restorative</p></div><div class="v2-checklist-item"><span class="v2-check">&#10003;</span><p>Exercise starts working again instead of backfiring</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="v2-inline-cta">
+    <a href="https://elional.com/products/calming-drink-mix" class="v2-cta-button">Try It Now <span class="v2-cta-arrow">&rarr;</span></a>
+    <p class="v2-micro-proof">✨ 2,400+ women report morning transformation</p>
+  </div>
+
+  <div class="v2-final-cta-wrap">
+    <div class="v2-final-cta-bg"></div>
+    <div class="v2-final-cta-glow"></div>
+    <div class="v2-final-cta-card">
+      <div class="v2-final-cta-header">
+        <h2>Reset Your Morning Heaviness Naturally</h2>
+        <p>Clinical-dose cortisol support that actually works for morning heaviness</p>
+      </div>
+      <div class="v2-final-product-img"><img src="https://ftwqfgojkrkdpglneifn.supabase.co/storage/v1/object/public/generated-images/generated/e5b7fd8d-ebad-4727-97be-2c2b2c6a1133/db0f48d4-db49-4d73-85c5-f92fb0d7c6ff.png" alt="Reset Your Morning Heaviness Naturally" loading="lazy"></div>
+      <div class="v2-benefits-grid">
+        <div class="v2-benefit-item">
+          <div class="v2-benefit-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></div>
+          <div><p class="v2-benefit-title">Clinical-dose KSM-66 Ashwagandha</p></div>
+        </div>
+        <div class="v2-benefit-item">
+          <div class="v2-benefit-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></div>
+          <div><p class="v2-benefit-title">Magnesium glycinate for sleep quality</p></div>
+        </div>
+        <div class="v2-benefit-item">
+          <div class="v2-benefit-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></div>
+          <div><p class="v2-benefit-title">400mg L-theanine for calm alertness</p></div>
+        </div>
+        <div class="v2-benefit-item">
+          <div class="v2-benefit-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></div>
+          <div><p class="v2-benefit-title">90-day money-back guarantee</p></div>
+        </div>
+      </div>
+      <div class="v2-final-cta-action">
+        <a href="https://elional.com/products/calming-drink-mix" class="v2-cta-button">Check Availability</a>
+        <div class="v2-trust-badges"><span class="v2-trust-badge"><svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>2,400+ Happy Customers</span><span class="v2-trust-badge"><svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>90-Day Guarantee</span><span class="v2-trust-badge"><svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Third-Party Tested</span></div>
+        <p style="margin-top:12px; font-size:0.85em; color:var(--color-text-secondary);">90-Day Money-Back Guarantee · Made in USA</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="v2-voting" id="v2-voting">
+    <h2>Rate Your Morning Heaviness Experience</h2>
+    <p>Help other women understand cortisol-driven symptoms</p>
+    <div id="v2-vote-cards" data-questions="[{&quot;label&quot;:&quot;How puffy do you look when you first wake up?&quot;},{&quot;label&quot;:&quot;How heavy/thick do you feel in the morning?&quot;},{&quot;label&quot;:&quot;How well does exercise improve your appearance?&quot;},{&quot;label&quot;:&quot;How helpful have your lab results been?&quot;},{&quot;label&quot;:&quot;How much does morning heaviness affect your confidence?&quot;}]"></div>
+  </div>
+
+  <div class="v2-comments">
+    <h2>Comments (8)</h2>
+    <div class="v2-comment-card">
+      <div class="v2-comment-header">
+        <div class="v2-comment-avatar">SM</div>
+        <div><span class="v2-comment-name">Sarah M.</span><span class="v2-comment-time"> &middot; 2 days ago</span></div>
+      </div>
+      <p class="v2-comment-text">I was skeptical at first, but after three weeks I could already see the difference. My friends even noticed!</p>
+      <div class="v2-comment-actions"><span>&#9829; 127</span><span>Reply</span></div>
+      <div class="v2-reply">
+        <div class="v2-comment-header">
+          <div class="v2-comment-avatar" style="width:28px;height:28px;font-size:0.7em;">KL</div>
+          <div><span class="v2-comment-name">Karen L.</span><span class="v2-comment-time"> &middot; 1 day ago</span></div>
+        </div>
+        <p class="v2-comment-text">Same experience here. So glad I found this.</p>
+        <div class="v2-comment-actions"><span>&#9829; 34</span></div>
+      </div>
+    </div>
+    <div class="v2-comment-card">
+      <div class="v2-comment-header">
+        <div class="v2-comment-avatar">ER</div>
+        <div><span class="v2-comment-name">Emily R.</span><span class="v2-comment-time"> &middot; 5 days ago</span></div>
+      </div>
+      <p class="v2-comment-text">Finally something that actually works. I have tried everything and this is the only product that delivered on its promises.</p>
+      <div class="v2-comment-actions"><span>&#9829; 89</span><span>Reply</span></div>
+    </div>
+    <div class="v2-comment-card">
+      <div class="v2-comment-header">
+        <div class="v2-comment-avatar">DK</div>
+        <div><span class="v2-comment-name">David K.</span><span class="v2-comment-time"> &middot; 1 week ago</span></div>
+      </div>
+      <p class="v2-comment-text">The science behind this makes so much sense. Results speak for themselves.</p>
+      <div class="v2-comment-actions"><span>&#9829; 203</span><span>Reply</span></div>
+      <div class="v2-reply">
+        <div class="v2-comment-header">
+          <div class="v2-comment-avatar" style="width:28px;height:28px;font-size:0.7em;">JT</div>
+          <div><span class="v2-comment-name">James T.</span><span class="v2-comment-time"> &middot; 6 days ago</span></div>
+        </div>
+        <p class="v2-comment-text">Agreed. Once you understand the root cause it all clicks.</p>
+        <div class="v2-comment-actions"><span>&#9829; 45</span></div>
+      </div>
+    </div>
+    <div class="v2-comment-card">
+      <div class="v2-comment-header">
+        <div class="v2-comment-avatar">AL</div>
+        <div><span class="v2-comment-name">Amira L.</span><span class="v2-comment-time"> &middot; 3 days ago</span></div>
+      </div>
+      <p class="v2-comment-text">Day 7 update: Already seeing changes. Things are completely different. Will update again at day 30.</p>
+      <div class="v2-comment-actions"><span>&#9829; 156</span><span>Reply</span></div>
+    </div>
+    <div class="v2-comment-card">
+      <div class="v2-comment-header">
+        <div class="v2-comment-avatar">RP</div>
+        <div><span class="v2-comment-name">Rachel P.</span><span class="v2-comment-time"> &middot; 4 days ago</span></div>
+      </div>
+      <p class="v2-comment-text">I got this for my partner and now we are both using it. Great results for both of us.</p>
+      <div class="v2-comment-actions"><span>&#9829; 78</span><span>Reply</span></div>
+    </div>
+    <div class="v2-comment-card">
+      <div class="v2-comment-header">
+        <div class="v2-comment-avatar">MT</div>
+        <div><span class="v2-comment-name">Mike T.</span><span class="v2-comment-time"> &middot; 1 week ago</span></div>
+      </div>
+      <p class="v2-comment-text">I will be honest, I did not think this would work for me. But something about this approach is different.</p>
+      <div class="v2-comment-actions"><span>&#9829; 112</span><span>Reply</span></div>
+      <div class="v2-reply">
+        <div class="v2-comment-header">
+          <div class="v2-comment-avatar" style="width:28px;height:28px;font-size:0.7em;">LH</div>
+          <div><span class="v2-comment-name">Lisa H.</span><span class="v2-comment-time"> &middot; 5 days ago</span></div>
+        </div>
+        <p class="v2-comment-text">Same! I was the biggest skeptic and now I am telling everyone.</p>
+        <div class="v2-comment-actions"><span>&#9829; 29</span></div>
+      </div>
+    </div>
+    <div class="v2-comment-card">
+      <div class="v2-comment-header">
+        <div class="v2-comment-avatar">NK</div>
+        <div><span class="v2-comment-name">Nina K.</span><span class="v2-comment-time"> &middot; 2 weeks ago</span></div>
+      </div>
+      <p class="v2-comment-text">Three months in and the results are even better than the first month. This is not a quick fix, it is a real solution.</p>
+      <div class="v2-comment-actions"><span>&#9829; 234</span><span>Reply</span></div>
+    </div>
+    <div class="v2-comment-card">
+      <div class="v2-comment-header">
+        <div class="v2-comment-avatar">TW</div>
+        <div><span class="v2-comment-name">Tom W.</span><span class="v2-comment-time"> &middot; 4 days ago</span></div>
+      </div>
+      <p class="v2-comment-text">Just ordered my second one. The first one lasted exactly as described.</p>
+      <div class="v2-comment-actions"><span>&#9829; 67</span><span>Reply</span></div>
+    </div>
+  </div>
+
+  <div class="v2-reviews">
+    <h2>What Others Are Saying</h2>
+    <div class="v2-review-card">
+      <div class="v2-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"I used to wake up looking like I&#x27;d been crying all night, puffy eyes, swollen face, just thick and heavy. Three weeks with FeelGood and I actually recognize myself in the morning mirror again. My husband said I look &#x27;bright-eyed&#x27; when I wake up now."</blockquote>
+      <div class="v2-review-meta"><span class="v2-review-name">Jennifer R.</span></div>
+    </div>
+    <div class="v2-review-card">
+      <div class="v2-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"My doctor kept saying my cortisol was fine, but I knew something was wrong. The morning puffiness was getting worse and worse. FeelGood addressed what the lab tests missed, now my face actually looks like my face when I wake up."</blockquote>
+      <div class="v2-review-meta"><span class="v2-review-name">Maria C.</span></div>
+    </div>
+    <div class="v2-review-card">
+      <div class="v2-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"The 3 AM wake-ups were bad enough, but waking up looking swollen every day was devastating to my confidence. Within a month of starting FeelGood, both issues resolved. I sleep through the night and wake up looking refreshed."</blockquote>
+      <div class="v2-review-meta"><span class="v2-review-name">Katherine M.</span></div>
+    </div>
+    <div class="v2-review-card">
+      <div class="v2-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"I thought the morning heaviness was just part of getting older. Turns out it was my cortisol rhythm being completely off. FeelGood helped reset it, I feel like myself again in the mornings instead of some puffy version of myself."</blockquote>
+      <div class="v2-review-meta"><span class="v2-review-name">Amanda L.</span></div>
+    </div>
+    <div class="v2-review-card">
+      <div class="v2-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>"Exercise was making me more puffy, which made no sense until I understood it was cortisol, not water retention. FeelGood supported my cortisol rhythm and now exercise actually helps instead of making me look worse the next day."</blockquote>
+      <div class="v2-review-meta"><span class="v2-review-name">Rebecca T.</span></div>
+    </div>
+  </div>
+
+  <div class="v2-guarantee">
+    <div class="v2-guarantee-inner">
+      <div class="v2-guarantee-img"><img src="images/morning-heaviness-cortisol-signs-guarantee.webp" alt="Guarantee" loading="lazy"></div>
+      <h3>90-Day Money-Back Guarantee</h3>
+      <p>Try FeelGood risk-free for 90 days. If you don&#x27;t notice improvements in sleep quality and morning heaviness, we&#x27;ll refund every penny. No forms, no questions, just email our support team.</p>
+    </div>
+  </div>
+
+  <footer class="v2-footer">
+    <p>© 2026 Women&#x27;s Health Science. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+  (function(){
+    var dateEl=document.getElementById('v2-date');
+    if(dateEl){var d=new Date();dateEl.textContent=d.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});}
+    var viewEl=document.getElementById('v2-view-counter');
+    if(viewEl){var pb=parseInt(viewEl.dataset.base,10);var pt=parseInt(viewEl.textContent.replace(/,/g,''),10);var count=!isNaN(pb)?pb:!isNaN(pt)?pt:300000;viewEl.textContent=count.toLocaleString();function tickView(){count+=Math.random()>0.5?1:2;viewEl.textContent=count.toLocaleString();setTimeout(tickView,Math.random()*5000+3000);}setTimeout(tickView,Math.random()*5000+3000);}
+    // T2 intentionally has no sticky CTA — see rendered HTML above.
+  })();
+  (function(){
+    var container=document.getElementById('v2-vote-cards');
+    if(!container||!container.dataset.questions)return;
+    var questions;try{questions=JSON.parse(container.dataset.questions);}catch(e){return;}
+    if(!questions||!questions.length)return;
+    var baseData=questions.map(function(){var tv=Math.floor(Math.random()*200)+700;var avg=9.0+Math.random()*0.7;return{totalVotes:tv,totalScore:Math.round(tv*avg)};});
+    var userVotes={};
+    function render(){
+      container.innerHTML='';
+      questions.forEach(function(q,i){
+        var d=baseData[i];var avg=(d.totalScore/d.totalVotes).toFixed(1);var pct=Math.round((d.totalScore/d.totalVotes)/10*100);
+        var card=document.createElement('div');card.className='v2-vote-card';
+        var label=document.createElement('p');label.className='v2-vote-label';label.textContent=q.label;card.appendChild(label);
+        var btns='';for(var s=1;s<=10;s++){var cls='v2-vote-btn';var dis='';if(userVotes[i]!==undefined){dis=' disabled';if(userVotes[i]===s)cls+=' voted';}btns+='<button class="'+cls+'" data-q="'+i+'" data-s="'+s+'"'+dis+'>'+s+'</button>';}
+        var btnWrap=document.createElement('div');btnWrap.className='v2-vote-buttons';btnWrap.innerHTML=btns;card.appendChild(btnWrap);
+        var result=document.createElement('div');result.className='v2-vote-result';result.innerHTML='<span>'+d.totalVotes.toLocaleString()+' votes</span><span class="v2-vote-score">'+avg+' / 10 ('+pct+'%)</span>';card.appendChild(result);
+        var bar=document.createElement('div');bar.className='v2-vote-bar';bar.innerHTML='<div class="v2-vote-bar-fill" style="width:'+pct+'%"></div>';card.appendChild(bar);
+        container.appendChild(card);
+      });
+    }
+    container.addEventListener('click',function(e){var btn=e.target.closest('.v2-vote-btn');if(!btn||btn.disabled)return;var qi=parseInt(btn.dataset.q,10);var sc=parseInt(btn.dataset.s,10);if(userVotes[qi]!==undefined)return;userVotes[qi]=sc;baseData[qi].totalVotes++;baseData[qi].totalScore+=sc;render();});
+    render();
+  })();
+  </script>
+</body>
+</html>
